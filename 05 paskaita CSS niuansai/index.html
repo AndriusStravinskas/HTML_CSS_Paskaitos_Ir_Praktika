@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 paskaita 10.14 - CSS niuansai</title>
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> (turi būti pirmas šitas, jog jį nuskaitytų ir tuomet skaitytų tavo CSS code) -->
+    <link rel="stylesheet" href="style/main.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+
+      </nav>
+    </header>
+    <main>
+
+      <section><!--Tėviniai/vaikiniai elementai-->
+        <h1>Tėviniai/Vaikiniai elementai</h1>
+        <p>
+          Vaikiniai elementai - Tai elementas esantis kažkokio elemento viduje yra vaikinis elementas, tam elementui, kurio viduje jis yra. <br>
+          Tėviniai elementai - Tai elementas turintis viduje kitą elementą, yra tėvinis elementas, tam elementui, kuris yra jo viduje.
+          
+        </p>
+        <ul>
+          <li>ul vaikas 1</li>
+          <li>ul vaikas 2</li>
+          <li>
+            ul vaikas 3 ; ol tėvas
+            <ol> <!--li3 vaikas 1-->
+              <li>ol vaikas 1</li>
+              <li>ol vaikas 2</li>
+              <li>ol vaikas 3</li>
+            </ol>
+          </li>
+          <li>ul vaikas 4</li>
+        </ul>
+      </section>
+
+      <section> <!--Paveldėjimas-->
+        <h1>Paveldėjimas</h1>
+        <p>
+          Paveldėjimas - - iš tėvinio elemento, vaikiniai elementai paveldi tam tikrus stilius. Paveldimi stiliai dažniausiai būna kažkas paprasto kaip - spalva, šriftas, dydis ir pns... Nepaveldimi yra  dydžio, display, position, fono, rėmelių ir pns.. nustatymai.
+        </p>
+        <ul class="paveldim">
+            <li>Pirmas</li>
+            <li>Antras</li>
+            <li>
+              Trečias
+              <ul>
+                <li>Trečio pirmas</li>
+                <li>Trečio antras</li>
+                <li>Trečio trečias</li>
+              </ul>
+            </li>
+            <li>Ketvirtas</li>
+        </ul>
+      </section>
+
+      <section style="background-image:linear-gradient( to top right, rgb(204, 219, 69), rgb(119, 119, 158));" id="pereinamasFonas2" class="pereinamasFonas pereinamasFonas3"><!--Stilių prioritetai-->
+        <h1>Stilių prioritetai</h1>
+        <ol>
+          <li>Inline Style - tai html įrašytas css style</li>
+          <li>ID</li>
+          <li>Class</li>
+          <li>Element Selector</li>
+          <li>CSS order (in CSS code) [CSS eiliškumas, skaito nuo viršaus į apačia/iš kairės į dešnę, todėl pritaikys paskutinį kurį perskaitė]</li>
+          <li>Element default Style (pvz h1 default yra paryskintas t.t.)</li>
+          <li>Inheritence (Paveldėjimas)</li>
+        </ol>
+        <p>
+          Esant dviem selektoriam, kurie nusako to paties elemento stilius yra atsižvelgiama į tų selektorių prioritetus. Aukščiau esantys selektoriai, turi didesnį prioritetą (žiūrėti į sąrašą). <br>
+          Esant dviem vienodo prioriteto selektoriams (keičiant vienodą stilių) yra atsižvelgiama į CSS eiliškumą (kuris CSS parašytas vėliau, tas ir bus taikomas).
+        </p>
+        <p>
+          !important prierašas prie stiliaus ignoruoja visus prioritetus ir suteikia tą stilių ir niekas jo pakeisti negali apart kito !important, kuris turėtų aukštesnį prioritetą. jį galima parašyti CSS faile pvz. <br><br>
+          background-image: linear-gradient(<br>
+            to top right, <br>
+            rgb(151, 161, 103),<br>
+            rgb(100, 154, 161) <br>
+          ) !important;<br>
+          <span class="warning">JEIGU ĮMANOMA NENAUDOTI</span>
+        </p>
+      </section>
+
+      <section> <!--Browser default styles-->
+        <h1>Browser default style</h1>
+        <h2>Browser default style</h2>
+        <p>
+          Tag'ai gali turėti savitus (default) stilius, kurie jiem yra suteikiami pačių naršyklių <br>
+          Kartais skirtingos naršyklės turi minimalistinius stilius. Tai gali paveikti svetainės išvaizda. <br>
+          Pvz.: h1 ir h2 browseris padaro, jog h1 patampa tokiu pačiu dydžiu kaip ir h2. <br>
+          Kartais numatytieji stiliai pagadia svetainės vaizdą arba apsunkina programuotojo darbą.
+        </p>
+        <p>
+          Yra keletas būdų išpresti nenorimų numatytų (default) stilių sukeliamas problemas. <br>
+          Vienas iš būdų yra nuimti visus numatytuosius stilius nuo savo svetainėje naudojamų tag,ų: <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">RESET CSS</a>. <br>
+          Kitas (<b class="warning">plačiau naudojamas</b>) būdas yra normalizuoti numatytuosius stilius tarp skirtingų naršyklių ir dalį jų panaikinti/pakeisti naudojant <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize CSS</a>.
+
+        </p>
+      </section>
+
+    </main>
+    <footer>
+      &copy; 2022 by Andrius Stravinskas
+    </footer>
+  </body>
+  </html>

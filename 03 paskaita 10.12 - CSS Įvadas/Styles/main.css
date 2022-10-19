@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(43, 109, 62, 0.61);
+}
+.slepiame{
+    display: none;
+}
+.rodyti{
+    display: block;
+}
+.KlasesPavadinimas{
+    color: rgb(0, 0, 255);
+    background-color: aliceblue;
+    margin: 0;
+    padding: 10px;
+    width: 150px;
+}
+#selektoriuSarasas{
+    list-style-type: square;
+}
+.paryskintas{
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+.kvadratas{
+    height: 100px;
+    width: 300px;
+    background-color: gold;
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    border: 3px solid purple;
+}
+.kvadratass{
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    border: 3px solid purple;
+}
+.inline{
+    display: inline;
+}
+.block{
+    display: block;
+}
+.inlineblock{
+    display: inline-block;
+}
+.didelisDiv{
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    position: relative;
+    color: red;
+}
+.fonoImage{
+    background-image: url('../images/595808.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.fonoSpalva{
+    background-color: black;
+}
+.gradialinis{
+    background-image: linear-gradient(
+        to bottom,
+        blue,
+        red,
+        yellow
+    );
+}
+/* .didelisDiv > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */

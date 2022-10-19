@@ -1,0 +1,107 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+body{
+  background-color: #ebebeb;
+
+}
+
+header,
+section{
+  background: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+img{
+  max-width: 100%;
+  
+}
+
+/* header{
+  text-align: center;
+} */
+
+header img{
+  max-width: 250px;
+}
+
+header ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header li{
+  display: inline;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+header li a{
+  color: black;
+  text-decoration: none;
+}
+
+header li:last-child{
+  margin-right: 0;
+}
+
+header li a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* section h2{
+  text-align: center;
+} */
+
+section p{ 
+  text-align: justify;
+}
+
+/* section h3{
+  text-align: center;
+} */
+
+.product{
+  padding: 10px;
+  margin: 10px;
+}
+
+.productImg{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.name{
+  font-weight: bold;
+}
+
+span{
+  font-weight: bold;
+}
+
+section ul{
+  text-align: left;
+}
+
+.maximaMap{
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.copyRights{
+  text-align: center;
+  padding: 15px;
+  color: rgb(121, 113, 104);
+}

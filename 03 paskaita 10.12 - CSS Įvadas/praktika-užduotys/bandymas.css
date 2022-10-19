@@ -1,0 +1,50 @@
+.inline{
+    display: inline-block;
+}
+.inline div{
+    width: 200px;
+    height: 50px;
+}
+h2{
+    margin-inline-start: 60px;
+}
+.dagestan{
+    margin-inline-start: 5px;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: #dd0000;
+}
+.yellow{
+    background-color: #ffce00;
+}
+.flag21{
+    background-color: #00923f;
+}
+.flag22{
+    background-color: #0093a6;
+}
+.flag23{
+    background-color: #d81e05;
+}
+.flag31{
+    background-color: white;
+    box-sizing: border-box;
+    border: solid 1px;
+}
+.flag32{
+    background-color: #dc143c;
+}
+.flag41{
+    background-color: #d81e05;
+}
+.flag42{
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+.flag43{
+    background-color: #00923f;
+}

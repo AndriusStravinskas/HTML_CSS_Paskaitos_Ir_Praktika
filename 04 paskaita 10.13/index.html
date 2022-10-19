@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 paskaita - HTML ir CSS Praktika</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <!-- <link rel="icon" href="iconos paveiksliukas"> icona psl logotipui -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#semantiniaiTagai" class="noDecor">Semantiniai tag'ai</a>
+            <a href="#semTagPvz" class="noDecor">Tag'ai</a>
+            <a href="#positions" class="noDecor">tag'ų pozicijos</a>
+            <a href="./pages/asmenineSvetaine.html" target="_blank" class="noDecor">Asmeninė Svetainė</a>
+        </nav>
+    </header>
+    <main>
+        <section class=""> <!--Semantiniai tag'ai-->
+            <div id="semantiniaiTagai" class="menuHelper"></div>
+            <h1>Semantiniai tag'ai</h1>
+            <ul>
+                <li>header - Viršutinė psl dalis.</li>
+                <li>nav - Navigation (menu).</li>
+                <li>main - pagrindinė psl dalis (content).</li>
+                <li>article - Content dalis (didesnė).</li>
+                <li>section - Content dalis (didesnė) (nesiskiria beveik niekuo, google yra      daugiau kuo skiriasi).</li>
+                <li>aside - šoninė sekcija (dažnai naudojama reklamom arba extra menu).</li>
+                <li>footer - puslapio apačia.</li>
+            </ul>
+        </section> 
+        <section class=""> <!-- puslapio išdėliojimo pvz.: -->
+            <div id="semTagPvz" class="menuHelper"></div>
+            <h1>Semantinių Tag'ų pavyzdys</h1>
+            <p><b>Visual code yra</b></p>
+            <!-- <header>
+                <nav>
+        
+                </nav>
+            </header>
+            <main>
+                <article></article>
+                <section></section>
+            </main>
+            <section>
+                <article></article>
+                <div></div>
+            </section>
+            <main>
+                <article>
+                    <section></section>
+                    <section></section>
+                </article>
+                <footer></footer>
+            </main> -->
+        </section>
+        <section class="" id="positions"> <!--Positions-->
+            <div id="positions" class="menuHelper"></div>
+            <h1>Pozicijos</h1>
+            <div> <!--Static-->
+                <h3>Static</h3>
+                <p> Negali suteikti top, right ir panasiai nustatymu/stilių ir yra default nustatymas</p>
+                <div class="kvadratas static">static 1</div>
+                <div class="kvadratas static top_20">static 2</div>
+                <div class="kvadratas static">static 3</div>
+                <div class="kvadratas static">static 4</div>
+            </div>
+            <div> <!--Relative -->
+                <h3>Relative</h3>
+                 <p>įgalini galimybe judinti elementus, suteikia galimybe naudoti tam tikrus papildomus stilius (top,left,right...). Top/left/right/bottom atitraukia elementą per nurodytą atstumą, nuo nurodytos kraštinės nuo elemento pradinės pozicijos. Nurodo absolute elemento ribas.</p>
+                <div class="kvadratas static">static 1</div>
+                <div class="kvadratas relative top_20 left_10 z_index_-1">relative 2</div>
+                <div class="kvadratas static left_10">static 3</div>
+                <div class="kvadratas static">static 4</div>
+            </div>
+            <div class="relative"> <!--Absolute --> <!-- div su absolute tėvinis elementas -->
+                <h3>Absolute</h3>
+                 <p> Absoliučioji pozicija išeina iš puslapio tėkmės ir įgalina Top/left/right/bottom/z-index naudojimą. Top/left/right/bottom atitraukia elementą per nurodytą atstumą, nuo artimiausio protėvio kuris turi relative poziciją. div kur komentas Absolute yra tėvinis. Užimą tiek vietos kiek reikalauja jų content, jei nėra nustatytas dydis.</p>
+                <div class="kvadratas static">static 1</div>
+                <div class="kvadratas static">static 2</div>
+                <div class="kvadratas absolute right_50">absolute 3</div>
+                <div class="kvadratas static">static 4</div>
+            </div>
+            <div> <!--Fixed-->
+                <h3>Fixed</h3>
+                <p>Fiksuota pozicija - Išeina iš puslapio tėkmės ir įgalina Top/left/right/bottom/z-index stilių naudojimą. Top/left/right/bottom atitraukia elementą per nurodytą atstumą nuo viewport (matymo lauko) jis prisifiksuoja.Užimą tiek vietos kiek reikalauja jų content, jei nėra nustatytas dydis. (kaip būna psl pagalba (parasykit i messengeri) tai ji yra fiksuota ir vaiksto su tavim kaip scrolini aukstyn, zemyn.)</p>
+                <div class="kvadratas static">static 1</div>
+                <div class="kvadratas fixed right_50 bottom">fixed 2</div>
+                <div class="kvadratas static">static 3</div>
+                <div class="kvadratas static">static 4</div>
+            </div>
+            <div class="aukstasElementas"> <!--Sticky-->
+                <h3>Sticky</h3> <!--reikia suteikti body aukscio height 500vh;, kad važinėtų scrolas žemiau ir pamatytum sticky prilipusį viršui.-->
+                <p> 
+                    Lipnioji pozicija - nesuteikia jokių stilių, bet įgalina  top/right/bottom/left stilių naudojimą.
+                    vaikšto kartu bet tik iki tėvinio elemento ribų, neišlipa iš tėvinio elemento, skirtingai nei fixed pozicionavimas.
+                </p>
+                <div class="kvadratas static">static 1</div>
+                <div class="kvadratas static">static 2</div>
+                <div class="kvadratas sticky top_20">Sticky 3</div>
+                <div class="kvadratas static">static 4</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

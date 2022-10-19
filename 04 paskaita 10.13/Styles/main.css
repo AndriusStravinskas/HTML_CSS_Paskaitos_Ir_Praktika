@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 500vh;
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+section{
+    position: relative;
+}
+
+.menuHelper{
+    position: absolute;
+    top: -50px;
+}
+
+.noDecor{
+    text-decoration: none;
+}
+
+.slept{
+    display: none;
+}
+
+.aukstasElementas{
+    height: 100vh;
+    background-color: bisque;
+}
+
+.kvadratas{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: dotted 2px black;
+    background-color: aquamarine;
+    color: darkgoldenrod;
+    font-size: 14px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.static{
+    position: static;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.sticky{
+    position: sticky;
+}
+
+.bottom{
+    bottom: 100px;
+}
+
+.top_20{
+    top: 20px;
+}
+
+.left_10{
+    left: 10px;
+}
+
+.z_index_-1{
+    z-index: -1;
+}
+
+.right_50{
+    right: 50px;
+}
+

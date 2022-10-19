@@ -1,0 +1,41 @@
+.veliavos div{
+    width: 200px;
+    height: 50px;
+}
+.veliavos{
+    display: inline-block;
+}
+.geltona{
+    background-color: yellow;
+}
+.zalia{
+    background-color: green;
+}
+.raudona{
+    background-color: red;
+}
+span{
+    display: inline-block;
+}
+.juoda{
+    background-color: black;
+}
+.melyna{
+    background-color: blue;
+}
+.balta{
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid black;
+}
+.ukraina{
+    background-color: blue;
+
+}
+.vysnine{
+    background-color: rgb(136, 22, 7);
+}
+h3{
+   margin-inline-start: 70px;
+    
+}

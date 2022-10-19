@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 paskaita - HTML Įvadas</title>
+  </head>
+  <body>
+    <div style="display: none"> <!-- Temų aprašymai -->
+      <h1>Temos kurias mokinsimės</h1>
+      <h3>HTML</h3>
+      <p>
+        Hypertext markup language - hiper teksto žymėjimo kalba skirta surašyti
+        informacijai į puslapį ir ją grupuoti tag'ais.
+      </p>
+      <br />
+      <h3>CSS</h3>
+      <p>Cascading style sheets - stilizavimo kalba.</p>
+      <br />
+      <h3>JS</h3>
+      <p>
+        Javascript - Skirtas pridėti puslapiui funkcionalumą ir/ar reagavimą į
+        vartotojo įvestis.
+      </p>
+      <br />
+      <h3>JS DOM</h3>
+      <p>
+        Javascript Document Object Model - Javascript'u
+        keičiamas/redaguojamas/pildomas puslapio kontentas.
+      </p>
+      <br />
+      <h3>TS</h3>
+      <p>
+        Typescript - Lygiai tas pats Javascript, tik su griežta rašymo
+        struktūra, kurioje reikia nurodyti duomenų tipus.
+      </p>
+      <br />
+      <h3>React</h3>
+      <p>
+        React - Galingas svetainių kurimo variklis. Jo vienas didžiausių
+        privalumų niekada nėra perkraunamas puslapis (jog nereikalautų laiko,
+        kai perkraunami duomenys jog nesikreiptų į duomenų baze.).
+      </p>
+      <br />
+      <h3>NodeJS</h3>
+      <p>
+        Node Javascript - Skirtas kurti backend'ui, kuriame vykdomi įvairūs
+        veiksmai su duomenimis.
+      </p>
+    </div> 
+    <div style="display: none">  <!-- Stilizavimo tag'ai -->
+        <h1>Stilizavimo tag'ai</h1>
+        <ul>
+            <li><i>i</i> - italic - itališkas srifto stilius, kuris pakreipia tekstą.</li>
+            <li><b>b</b> - Bold - Paryškina tekstą.</li>
+            <li><em>em</em> - Emphasize - pakreipia tekstą. (skiriasi nuo i tag'o jog screen rederiai pabrėžtų tekstą.)</li>
+            <li><strong>strong</strong> - pastorina tekstą.(skiriasi nuo b tag'o jog screen rederiai pabrėžtų tekstą.)</li>
+            <li><sup>sup</sup> - Super(man) - pakelia ir sumažina tekstą į viršų.</li>
+            <li><sub>sub</sub> - SubScript - Sumažina tekstą ir nuleidžia į apačią.</li>
+            <li><mark>mark</mark> - Pažymi tekstą geltonai.</li>
+            <li><u>u</u> - Underline - Pabraukia tekstą.</li>
+            <li><small>small</small> - Pamažina tekstą.</li>
+            <li><big>big</big></li> - Padidina tekstą.
+            <li>center - Sucentruoja tekstinę informaciją (po table/img/paragraph).</li>
+        </ul>
+        <i>Lorem</i> <b>ipsum</b>, <em>dolor</em> <strong>sit</strong> <sup>amet</sup> <sub>consectetur</sub> <mark>adipisicing</mark> <u>elit</u>. <small>Lorem</small>, <big>big</big>. 
+    </div>
+    <div style="display: none"> <!-- Tag'ai -->
+    <h1>Tag'ai</h1>
+    <ul>
+        <li><button>button</button> - Mygtuko tag'as</li>
+        <li><q>q</q> - Short quotation - Trumpa citata.</li>
+        <li>blockquote - Long quotation - Ilga citata.</li>
+        <li><input type="text" placeholder="input"> - Input - Formos įvesties laukelis.</li>
+        <li>label - Etiketė skirta nurodyti į nustatytą (pagal id) input'ą.</li>
+        <li>select - Pasirinkimo elementas, kurio viduje yra opcijos.</li>
+        <li>option - Select (Pasirinkimo) elemento viduje esanti opcija</li>
+        <li>textarea - Didelis tekstinis įvesties laukas.</li>
+        <li>script - skirtas rašyti/prijungti JS kodą/failą. </li>
+        <li>span - Tuščias linijinio tipo elementas skirtas išskirti informaciją.</li>
+        <li>fieldset - skirtas grupuoti susijusius input elementus formos viduje.</li>
+        <li>legend - Nurodo fieldset'o pavadinimą.</li>
+        <li>figure - skirtas img elementas grupuoti.</li>
+        <li>figcaption - aprašymui po nuotrauka.</li>
+        <li>pre - Kaip p tag'as jog reguotų kaip dėsi enter tekste.</li>
+        <li>video - Skirtas atvaizduoti kažkokį vaizdo įrašą.</li>
+        <li>iframe - skirtas į puslapį įkelti kito puslapio turinio arba dalį puslapio turinio (video/map/... su įvairiomis parinktimis).</li>
+        <li>table - Lentelės tag'as.</li>
+        <li>tr - Table Row - Lentelės eilutė.</li>
+        <li>th - Table Heading - Lentelės stulpelio/eilutės pavadinimas.</li>
+        <li>td - Table Data - Lentelės duomenys (info vieneto gabaliukas)</li>
+        <li>thead - Table Head - Lentelės galva (viršutinė dalis), kurioje būna stulpelių pavadinimai.</li>
+        <li>tbody - Table Body - Lentelės kūnas (vidurinė dalis), kurioje būna lentelės duomenys. </li>
+        <li>tfoot - Table Foot - Lentelės kojos ( apatinė dalis), kurioje būna išvada/suma/duomenys (gali būti skirta atkartoti thead).</li>
+        <li>colgroup - Column Group - Skirtas grupuoti stulpelius (stilizavimui).</li>
+        <li>caption - skirtas lentelės pavadinimui atvaizduoti.</li>
+    </div>
+    <div style="display: none"> <!-- Table -->
+        <table border>
+            <thead>
+            <th>Vardas</th>
+            <th>Pavardė</th>
+            <th>Amžius</th>
+            <th>pinigai per metus</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andrius</td>
+                    <td>Stravinskas</td>
+                    <td rowspan="3">26</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>Andrius</td>
+                    <td>Stravinskas</td>
+                    <td>26</td>
+                </tr>
+                    <td>Andrius</td>
+                    <td>Stravinskas</td>
+                    <td>26</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">vidurkis</td>
+                        <td>26</td>
+                        <td>26</td>
+                    </tr>
+                </tfoot>
+             </tbody>
+        </table>
+    </div>
+    <div> <!-- Form  -->
+        <h1>FORMA</h1>
+        <label for="vardas">Vardas</label>
+        <input type="" name="" id="vardas">
+
+    </div>
+    <textarea name="" id="" cols="30" rows="10"placeholder="Įrašykite atsiliepimą..."></textarea>
+    <br>
+    <select name="" id="">
+        <option value="Šuo">Šuo</option>
+        <option value="Katė">Katė</option>
+        <option value="Pelė">Pelė</option>
+    </select>
+
+
+  </body>
+</html>

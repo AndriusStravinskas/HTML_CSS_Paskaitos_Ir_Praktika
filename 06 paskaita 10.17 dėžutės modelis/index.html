@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 paskaita - Box Model</title>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="menu">
+        <a href="#boxModel" class="ddParent">boxModel</a>
+        <div class="drop">
+          <a href="#content" class="ddElelment">Content</a> <br>
+          <a href="#padding" class="ddElelment">Padding</a><br>
+          <a href="#border" class="ddElelment">Border</a><br>
+          <a href="#margin" class="ddElelment">Margin</a><br>
+          <a href="#position" class="ddElelment">Position</a><br>
+        </div>
+      </div>
+  
+
+    <section class="button">
+      <div class="dropDown">
+        <button class="dropDownButton">dropdown</button>
+        <div class="dropDown-content">
+          <a href="#boxModel">Box Model</a> <br>
+          <a href="#content">Content</a> <br>
+          <a href="#padding">Padding</a><br>
+          <a href="#border">Border</a><br>
+          <a href="#margin">Margin</a><br>
+          <a href="#position">Position</a><br>
+        </div>
+      </div>
+    </section>
+
+    
+    <section>
+      <div>
+        <select name="" id="" class="custom-select">
+          <option value="">Box Model</option>
+          <option value="">Content</option>
+          <option value="">Padding</option>
+          <option value="">Border</option>
+          <option value="">Margin</option>
+          <option value="">Position</option>
+        </select>
+        <span class="custom-arrow"></span>
+      </div>
+    </section>
+</header>
+    <section id="boxModel">
+      <h1>Box Model</h1>
+      <img src="./images/box_model.png" alt="" width="500">
+      <ul>
+        <li>Content - Plotis ir aukštis pvz.: teksto ar paveiksliuko, Pačiame centre.</li>
+        <li>Padding - Atitraukimas nuo contento iki rėmelio.(LT - pamušalas :) ) </li>
+        <li>Border - Rėmeliai</li>
+        <li>Margin - Atitraukimas nuo elemento ribų iki sekančio elemento.</li>
+        <li>Position (top/bottom/left/right)</li>
+      </ul>
+      <div class="dezutesModelioPavyzdys">Box Model</div>
+    </section>
+    <section id="boxModelParts">
+      <div id="content">
+        <h2>Content</h2>
+        <p>
+          Elemento turinys tai ekrane atvaizduojama informacija vartotojui. gali būti tekstas, paveiksliukas, fonas ir pnš... Turinio dydį nusako turinio kiekis / dydis (nustatytas per CSS) / display.
+        </p>
+      </div>
+      <div id="padding"> <!--Padding-->
+      <h2>Padding</h2>
+      <p>
+        Pamušalas - Sukurią gražius atitraukimus. Tai yra atstumas tarp elemento turinio ir rėmelių, kuris dažniausiai naudojamas tam, kad elemento turinys (content) nebūtų prilipęs prie savo kraštų.
+      </p>
+      <ul>
+        <li>padding: top right bottom left;</li>
+        <li>padding: top right/left bottom;</li>
+        <li>padding: top/bottom right/left;</li>
+        <li>padding: top/right/bottom/left;</li>
+        <li>padding-top: top;</li>
+        <li>padding-right: right;</li>
+        <li>padding-bottom: bottom;</li>
+        <li>padding-left: left;</li>
+      </ul>
+    </div>
+    <div id="border">
+      <h2>Border</h2>
+      <p>
+        Rėmelis yra tarp padding ir margin. Rėmelis yra paskutinė atvaizuojama element dalis (fonas). Kitaip pasakius - rėmelis yra matomo elemento kraštas.
+      </p>
+      <h3>CSS rašymo būdai</h3>
+      <ul>
+        <li>Border: top/right/bottom/left;</li>
+        <li>Border-top: width type color;</li>
+        <li>Border-right: width type color;</li>
+        <li>Border-bottom: width type color;</li>
+        <li>Border-left: width type color;</li>
+        <li>border-width: top/right/bottom/left;</li>
+        <li>border-style: top/right/bottom/left;</li>
+        <li>border-color: top/right/bottom/left;</li>
+        <li>border-radius: topLeft I topRight I bottom/right I bottomLeft;</li>
+        <li>Border-right-color: rightColor;</li>
+        <li>border-[kraštinė]-[nustatymas]: nutstatymoParinktis</li>
+      </ul>
+    </div>
+    <div id="margin"> <!--Padding-->
+      <h2>Margin</h2>
+      <p>
+        Paraštė yra atstumas nuo elemento rėmelio iki aplinkinių elementų, kuris dažniausiai naudojamas tam, kad elementą patrauktume nuo kitų elementų. <br>
+        Margin negali įgauti <b>FONO</b>.
+      </p>
+      <h3>CSS rašymo būdai:</h3>
+      <ul>
+        <li>margin: top right bottom left;</li>
+        <li>margin: top right/left bottom;</li>
+        <li>margin: top/bottom right/left;</li>
+        <li>margin: top/right/bottom/left;</li>
+        <li>margin:-top: top;</li>
+        <li>margin:-right: right;</li>
+        <li>margin:-bottom: bottom;</li>
+        <li>margin:-left: left;</li>
+      </ul>
+    </div>
+    <div id="position"> <!--Padding-->
+      <h2>Position</h2>
+      <p>
+        <a href="../04 paskaita 10.13/index.html#pos" target="_blank">Pozicijos...</a>
+      </p>
+    </div>
+    </section>
+  </main>
+</body>
+</html>

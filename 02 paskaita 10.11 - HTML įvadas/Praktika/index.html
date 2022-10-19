@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Įžanga į HTML (Praktika)</title>
+  </head>
+  <body>
+    <div style="display: none"> <!-- <Praktika: Kuriame paprastą puslapį su HTML>  -->
+      <h1>Čia yra antraštė</h1>
+      <p>Toliau seka paragrafas, <b>įsiminkite</b>, paragrafas.</p>
+      <p>Žemiau galima pridėti nuotrauką ir kokį nors sąrašą.</p>
+      <img src="/01 paskaita 10.10 susipažinimas/HTML-CSS/images/dog.jpg" alt="Šuo" width="200" height="150">
+      <ol>
+        <li>Vienas</li>
+        <li>Du</li>
+        <li>Trys</li>
+      </ol>
+      <p>
+        Jeigu kažką pamiršite, visada naudokite <a target="_blank" href="https://www.google.lt">Google</a>
+      </p>
+   
+    </div> 
+    <hr>
+    <div> <!-- <Užduotys>  -->
+        <h2>1.užduotis</h2>
+        <ul>
+            <li>Stilizavimo tag'ai</li>
+            <li>Tag'ai</li>
+            <li>Lentelės sukūrimas su HTML</li>
+            <li>Sukurti formos įvesties laukelį</li>
+        </ul>
+        <hr>
+        <h2>2.užduotis</h2>
+        <ol>
+            <li>CSS pagrindų</li>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li></li>
+        </ol>
+        <hr>
+        <table border>
+            <thead>
+                <th>Eilės numeris</th>
+                <th>Pavadinimas</th>
+                <th>Šalis</th>
+                <th>Buvau/Nebuvau</th>
+                <th>Paveiksliukas</th>
+                <th>Nuoroda</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><center>1.</center></td>
+                    <td>Torontas</td>
+                    <td>Kanada</td>
+                    <td>Buvau</td>
+                    <td><img src="./images/Torontas2020.jpg" alt="Toronto miestas" width="150"></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Toronto">Torronto</a></td>
+                </tr>
+                <tr>
+                    <td><center>2.</center></td>
+                    <td>Montpellier</td>
+                    <td>Prancūzija</td>
+                    <td>Buvau</td>
+                    <td><img src="./images/montpellier.jpg" alt="Montpellier" width="150"></td>
+                    <td><a target="_blank" href="https://lt.wikipedia.org/wiki/Monpelj%C4%97">Montpellier</a></td>
+                </tr>
+                <tr>
+                    <td><center>3.</center></td>
+                    <td>Machu Picchu</td>
+                    <td>Peru</td>
+                    <td>Nebuvau</td>
+                    <td><img src=".//images/Machu Picchu.jpg" alt="Machu Picchu" width="150"></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Machu_Picchu">Machu Picchu</a></td>
+                </tr>
+                <tr>
+                    <td><center>4.</center></td>
+                    <td>Kanados Wonderland</td>
+                    <td>Kanada</td>
+                    <td>Buvau</td>
+                    <td><img src=".//images/Wonderland.jpg" alt="Canada Wonderland" width="150"></td>
+                    <td><a target="_blank" href="https://www.canadaswonderland.com/">Canada Wonderland</a></td>
+                    <tr>
+                        <td><center>5.</center></td>
+                        <td>The United Center</td>
+                        <td>JAV, Čikaga, Ilinojus</td>
+                        <td>Nebuvau</td>
+                        <td><img src=".//images/The united center.jpg" alt="The United Center" width="150"></td>
+                        <td><a target="_blank" href="https://www.unitedcenter.com/">The United Center</a></td>
+                    </tr>
+                </tr>
+            </tbody>          
+        </table>
+        <hr>
+        <h2>Input tipai</h2>
+        <label for="text">Text   </label>
+        <input type="text" id="text" placeholder="Some text...">
+        <br><br>
+        <label for="color">Color</label>
+        <input type="color" id="color">
+        <br><br>
+        <button>button</button>
+        <br><br>
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" id="checkbox">
+        <br><br>
+        <label for="datetime-local">Datetime-local</label>
+        <input type="datetime-local" id="datetime-local">
+        <br><br>
+        <label for="file">File</label>
+        <input type="file" id="file">
+        <br><br>
+        <label for="">Number</label>
+        <input type="number" id="number" placeholder="Number">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password">
+        <br><br>
+        <fieldset>
+            <legend>Geriausias telefonas:</legend>
+            <div>
+                <input type="radio" name="telefonas" id="iphone" value="iphone">
+                <label for="iphone">Iphone</label>
+            </div>
+            <div>
+                <input type="radio" name="telefonas" id="samsung" value="samsung">
+                <label for="samsung">Samsung</label>
+            </div>
+            <div>
+                <input type="radio" name="telefonas" id="nokia" value="samsung">
+                <label for="nokia">Nokia</label>
+            </div>
+        </fieldset>
+        <br><br>
+        <label for="">Range</label>
+        <input type="range">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+        <br><br>
+        <input type="submit">
+
+    </div>
+  </body>
+</html>

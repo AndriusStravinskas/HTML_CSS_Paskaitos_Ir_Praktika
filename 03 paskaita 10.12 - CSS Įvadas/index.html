@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS įvadas</title>
+
+    <link href=".//Styles/main.css" rel="stylesheet">
+
+    <style>
+        h4{
+            color: orange;
+            border: 5px dashed rgb(125, 78, 129);
+            width: 130px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="slepiame"> <!-- CCS rašymo būdai-->
+        <h1>CSS rašymo būdai</h1>
+        <p>
+            <b>inline / Linijinis</b> - Stilizuojame elementą, 
+            suteikdami jam style atributą ir tame atribute nurodome stilius kabutėse už lygybės.
+            <br>
+            Dažniausiai naudojamas norint ant greitųjų pastilizuoti kažkokį elementą,
+            patikrinti kaip jis atrodytų (testuoti). <br>
+            Style atributo viduje, rašomas kodas nėra css sintaksė.
+        </p>
+        <p style=" color: red; background-color: black; font-size: 12px; width: 150px;">
+            Inline pavyzdys
+        </p>
+        <p>
+            <b>Internal / Vidinis</b> - Stilizuojame elementą, jį parinkdami selektoriaus pagalba,
+             o patį CSS kodą rašome head tag'o dalyje sukurtame style tag'e. <br>
+             Dažniausiai naudojamas norint ant greitųjų pastilizuoti kažkokį elementą,
+             patikrinti kaip jis atrodytų (testuoti).
+        </p>
+        <h4>Internal pavyzdys</h4>
+        <p>
+            <b>External / Išorinis</b> - Stilizuojame elementą, jį parinkdami selektoriaus pagalba,
+            o patį CSS kodą rašome atskirame CCS faile, kurį prijungiame prie HTML failo link tag'o pagalba. <br>
+            Dažniausiai naudojamas CSS rašymo būdas.
+            Jo didžiausi privalumai yra HTML faile ir didelės perpanaudojimo galimybės.
+        </p>
+        <p class="KlasesPavadinimas">
+            External pavyzdys
+        </p>
+    </div>
+    <div class="slepiame"> <!-- CCS basic selektoriai-->
+        <h1>Selektoriai</h1>
+        <ul id="selektoriuSarasas">
+            <li>element - Parenka visus elementus (tag'us) ir suteikia jiems nurodytus
+                stilius.</li>
+            <li>class - Kuriama rašant tašką '.' ir išgalvotą pavadinimą.
+                Stiliai taikomi tiems elementams,
+                kurie turi identišką class atributo nurodymą.
+            </li>
+            <li>id - Kuriama rašant groteles '#' ir išgalvotą pavadinimą.
+                Stiliai taikomi tiems elementams, kurie turi identišką id atributo
+                nurodymą.</li>
+        </ul>
+        <p>
+            <span class="paryskintas">Class (Klasės)</span> - Turi daug su daug santykį. Vienas elementas gali turėti
+            daug klasių (class="paryskinta slepiame"). Viena klasė gali būti priskirta daugeliui elementų.
+        </p>
+        <p>
+            <span class="paryskintas">ID</span> - Turi vienas su vienu santykį. Vienas elementas gali turėti
+            TIK vieną ID gali būti priskirtas TIK vienam elementui.
+        </p>
+    </div>
+    <div class="slepiame"> <!-- CCS spalvos-->
+        <h1>Spalvos</h1>
+        <ul>
+            <li>
+                <a href="https://htmlcolorcodes.com/color-names/" target="_blank">
+                    Spalvos pavadinimas;
+                </a> Yra 140 spalvų pavadinimų.
+            </li>
+            <li>RGB - Red Green Blue</li>
+            <li>HEX - #rrggbb</li>
+        </ul>
+        <p>
+            <span class="paryskintas">RGB</span> - Red Green Blue.
+            Nurodai kiek kokios pagrindinės spalvos nori įmaišyti į išgaunamą spalvą.
+            Kiekis nurodomas nuo 0 iki 256. <br><br>
+            <span class="paryskintas">RGBA</span> - Red Green Blue Alpha(Opacity(permatomumas)).
+            Norint suteikti spalvai permatomumą, reikia prie RGB pridėti A raidę ir pridėti 4'tą parametrą nustatyme.
+            rgba(red, green, blue, alpha)
+        </p>
+        <p>
+            <span class="paryskintas">HEX</span> - Hexadecimal(šešioliktainis). Nurodai kiek kokios pagrindinės spalvos nori įmaišyti
+            į išgaunamą spalvą. Kiekis nurodomas nuo 00 iki ff. #rrggbb<br><br>
+            <span class="paryskintas">HEX</span> (su permatomumu). Norint suteikti spalvai permatomumą,
+            reikia prie HEX simbolių pridėti dar vieną porą simbolių kurie nurodys permatomumą. #rrggbbaa<br><br>
+            00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15 16 17 18 19 1a 1b 1d 1f 20...
+            a9 aa ab ac ad ae af b0 b1 b2 ... ff <br><br>
+            Trumpinimai: Jeigu spalva būtų <span class="paryskintas">#aabbcc</span>,
+            galima ją trumpinti į <span class="paryskintas">#abc</span>; #fffff -> #fff
+
+        </p>
+    </div>
+    <div class="rodyti"> <!-- CCS display-->
+        <ul>
+            <li>none - Neatvaizduojama ekrane</li>
+            <li>block - Suteikiamas blokinis stilius</li>
+            <li>inline - Suteikiamas linijinis stilius.</li>
+            <li>inline-block - Suteikiamas linijinis-blokinis stilius.</li>
+        </ul>
+        <p>
+            block - Užimą visą eilutę ir galima keisti jo dydį.
+        </p>
+        <p>
+            inline - Užima tik tiek vietos kiek reikalauja content ir negalima keisti dydžio.
+        </p>
+        <p>
+            inline block - Užima tiek vietos kiek reikalauja content ir galima keisti jo elemento dydį.
+        </p>
+        <div>
+            <h3>Inline</h3>
+            <div class="kvadratas inline">1</div>
+            <div class="kvadratas inline">2</div>
+            <div class="kvadratas inline">3</div>
+            <h3>Block</h3>
+            <div class="kvadratas block">1</div>
+            <div class="kvadratas block">2</div>
+            <div class="kvadratas block">3</div>
+            <h3>Inline-block</h3>
+            <div class="kvadratas inlineblock">1</div>
+            <div class="kvadratas inlineblock">2</div>
+            <div class="kvadratas inlineblock">3</div>
+        </div>
+    </div>
+    <div class="didelisDiv gradialinis"> <!-- CCS Fonai-->
+        <h1>Fonai</h1>
+        <!-- <img src="./images/bandymas.jpg" alt=""> -->
+
+
+    </div>
+</body>
+</html>

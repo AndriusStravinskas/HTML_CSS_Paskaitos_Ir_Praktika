@@ -1,0 +1,38 @@
+.kortele_1{
+  height: 600px;
+  width: 1500px;
+  border: 3px solid red;
+  background-image: url(./images/zalgiris-default.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.korteles_1_tekstas{
+  margin: 20px;
+  /* padding: 0 20px; */
+  height: calc(100% - 20px);
+  width: calc(50% - 80);
+  /* height: 100%; */
+  width: 30%;
+  text-align: justify;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.korteles_1_tekstas h2{
+  text-align: center;
+  margin: 0;
+}
+
+.korteles_1_tekstas p{
+  width: 80%;
+  opacity: 0;
+}
+
+.korteles_1_tekstas p:hover{
+  opacity: 1;
+}

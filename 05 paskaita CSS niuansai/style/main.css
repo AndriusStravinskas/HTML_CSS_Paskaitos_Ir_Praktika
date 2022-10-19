@@ -1,0 +1,57 @@
+
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+h1{
+  text-align: center;
+  margin-top: 0;
+}
+
+.paveldim{
+  color: red;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255,156,156),
+    rgb(219, 190, 27)
+  );
+  list-style-type: square;
+}
+.paveldim ul{
+  list-style: ':) ';
+}
+section{
+  min-height: 50vh;
+  background-color: antiquewhite;
+}
+
+.pereinamasFonas{
+  background-image: linear-gradient(
+    to top right,
+    rgb(151, 161, 103),
+    rgb(100, 154, 161)
+  );
+}
+
+.pereinamasFonas3{
+  background-image: linear-gradient(
+    to top right,
+    rgb(125, 114, 185),
+    rgb(95, 204, 153)
+  );
+}
+
+
+#pereinamasFonas2{
+  background-image: linear-gradient(
+    to top right,
+    rgb(231, 106, 89),
+    rgb(196, 36, 97)
+  );
+}
+  .warning{
+    font-size: larger;
+    color: red;
+    font-weight: bold;
+  }
+
+
