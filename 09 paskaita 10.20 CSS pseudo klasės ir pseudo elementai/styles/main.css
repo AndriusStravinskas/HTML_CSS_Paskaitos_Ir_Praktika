@@ -1,0 +1,81 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+.nerikiuotas.dar > li{
+  list-style-type: square;
+}
+/* .nerikiuotas > li ">" - tai reikškia jog ims tik li
+ elementus ir neims nieko kas yra ju viduje */
+
+ /* element.class - pvz.: ul.nerikiuotas > li{
+  list-style-type: square;
+ } */
+
+ ul.nerikiuotas.dar > li{
+  list-style-type: square;
+ }
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 300;
+}
+
+section + hr{
+  background-color: red;
+  height: 1px;
+}
+
+[title]{
+  color: red;
+}
+
+[title="duh"]{
+  color: blue;
+}
+
+hr+hr{
+  background-color: green;
+  height: 1px;
+}
+
+/* Nelankytas linkas */
+h1 > a:link{ 
+  color: blue;
+}
+
+/* Lankytas linkas */
+h1 > a:visited{
+  color: red;
+}
+
+h1 > a:hover{
+  color: green;
+}
+/* Kai paspaudžiama ant linko */
+h1 > a:active{
+  color: green;
+}
+
+li{
+  color: rgb(0, 0, 0);
+}
+
+/* markeriai, skaičiai, kvadratukų spalva */
+li::marker{
+  color: black;
+}
+
+ul li::before{
+  content: ":)";
+  color: pink;
+  font-size: 25px;
+}
+
+li::after{
+  content: '$';
+  color: purple;
+}
+
+h1::selection{
+  color: orange;
+  background-color: black;
+}
