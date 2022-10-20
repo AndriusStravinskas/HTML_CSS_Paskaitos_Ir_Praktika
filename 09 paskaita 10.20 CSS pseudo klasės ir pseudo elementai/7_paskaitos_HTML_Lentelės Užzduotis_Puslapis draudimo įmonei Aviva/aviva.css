@@ -1,0 +1,137 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  text-align: center;
+  background-color: black;
+}
+
+.box{
+  max-width: 960px;
+  height: 342px;
+  margin: 0 auto;
+}
+
+img{
+  width: 200px;
+}
+
+h1{
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+
+nav{
+  padding: 19.6px;
+  width: 920px;
+  text-align: right;
+  background-color: #d6b731;
+  position: relative;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+#about{
+  text-align: center;
+}
+
+#about .box{
+  height: 210px;
+}
+
+
+section .box{
+  padding: 20px 0px;
+}
+
+#about h2{
+  text-align: left;
+}
+
+#about p{
+  text-align: left;
+}
+
+#about a{
+  background-color: #d11e00;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+#tables{
+  background-color: #021749;
+  color: white;
+}
+
+table, th, td{
+  border: 2px solid #d11e00;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-spacing: 2px;
+}
+
+th{
+  width: 600px;
+  height: 22px;
+  text-align: center;
+}
+
+#pavarde{
+  text-align: center;
+}
+
+td{
+  width: 10px;
+  height: 40px;
+}
+
+tr *:first-child{
+  text-align: center;
+}
+
+tr *:last-child{
+  text-align: right;
+}
+
+#contacts {
+ text-align: center;
+height: 200px;
+}
+
+#contacts .box{
+  max-width: 960px;
+  height: 234px
+}
+
+#contacts h2{
+  text-align: left;
+}
+
+#contacts ul{
+  text-align: left;
+}
+
+#contacts a{
+  background-color: #d11e00;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+footer{
+  background-color: #d6b731;
+  text-align: center;
+  padding: 30px;
+  height: 14px;
+  color: white;
+}
