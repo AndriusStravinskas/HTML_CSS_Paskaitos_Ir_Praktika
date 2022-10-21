@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <!--
+    nth / child / type
+  CAO 8
+  Formos
+  CAO 9
+  -->
+
+  <main>
+    <section id="selectors">
+      <h1>Selectors</h1>
+      <ul>
+        <li>:first-child</li>
+        <li>:last-child</li>
+        <li>:only-child</li>
+      </ul>
+      <p>
+        Pirmas/Paskutinis/Vienintelis vaikinis elementas, lygmenyje įgauna nurodytus stilius. Galima tikslinti koks tai elementas prie dvitaškį nurodant elemento/id/klasės ar kitą selektorių.
+      </p>
+      <ul>
+        <li>:first-of-type</li>
+        <li>:last-of-type</li>
+        <li>:only-of-type</li>
+      </ul>
+      <p>
+        Pirmas/Paskutinis/Vienintelis vaikinis nurodyto tipo elementas, lygmenyje įgauna nurodytus stilius. Nurodytas elementas ignoruoja kito tipo elementas (ne taip kaip child selektorius).
+      </p>
+      <ul>
+        <li>:nth-child(n)</li>
+        <li>:nth-last-child(n)</li>
+        <li>:nth-of-type(n)</li>
+        <li>:nth-last-of-child(n)</li>
+      </ul>
+      <p>:nth-child(n) n yra pvz.: 2, even, odd, 2n, 2n+1 ir t.t.</p>
+      <p>NTH žymėjimas nurodo kelintą <b>vaikinį</b> / kas kelintą / kas kelintą nuo kelinto elemento(type/chlid) select'ini.</p>
+      <ul>
+        <li>:not(selectors)</li>
+        <li>:first-letter</li>
+        <li>:first-line</li>
+        <li>:empty</li>
+        <li>:fullscreen</li>
+        <li>:target</li>
+      </ul>
+    </section>
+    <section>
+      <!--Trumpinys greitai pasidaryti elementus su tekstu p*10>lorem10 -->
+      <h1><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child">NTH pavyzdys</a></h1>
+      <div class="nthTryOut">
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, alias.</p>
+        <p>2 Animi nesciunt impedit beatae dolorem recusandae nostrum ea minus? Molestiae.</p>
+        <p>3 Sapiente nihil sequi officia, corporis facilis enim ipsum ipsam unde.</p>
+        <p>4 Error, illum! Suscipit aspernatur quam molestias, doloremque dolorum nulla assumenda!</p>
+        <p>5 Neque facere illum a fuga, beatae temporibus ipsam ullam vitae.</p>
+        <p>6 Tenetur consectetur, possimus ratione commodi a accusantium molestias officiis. Doloribus!</p>
+        <p>7 Est eligendi molestiae placeat temporibus dolor culpa ipsum praesentium veritatis.</p>
+        <p>8 Aut dolores incidunt aperiam aspernatur eos mollitia! Facilis, voluptates esse?</p>
+        <p>9 Repellendus nisi, odio voluptatem sunt est libero facere molestiae numquam?</p>
+        <p>10 Porro, dolor! Eligendi, consequuntur! Aspernatur id molestias quae voluptas maxime.</p>
+      </div>
+    </section>
+    <section id="forms">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">Input</a>
+      <form>
+        <fieldset>
+          <legend>Formos pavadinimas</legend>
+          <div>
+            <h3>pasirinkite valgius</h3>
+            <div class="ib">
+              <label for="sriuba">Sriuba</label>
+              <input type="radio" id="sriuba" name="valgis" value="sriuba" checked required>
+            </div>
+            <div class="ib">
+              <label for="žuvis">Žuvis</label>
+              <input type="radio" id="žuvis" name="valgis" value="žuvis">
+            </div> 
+            <div class="ib">
+              <label for="vištiena">Vištiena</label>
+              <input type="radio" id="vištiena" name="valgis" value="vištiena">
+            </div> 
+            <div class="ib"> 
+              <select name="mealChoise" id="" required>
+                <option value=""></option>
+                <option value="1">Sriuba</option>
+                <option value="2">Žuvis</option>
+                <option value="3">Vištiena</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
