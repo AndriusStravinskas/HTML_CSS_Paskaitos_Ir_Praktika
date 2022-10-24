@@ -1,0 +1,78 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+body{
+  background-image: url(./images/bg.png);
+
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flexBox{
+  display: flex;
+  height: 100px;
+  background-color: rgb(184,203,33);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  height: 65px;
+}
+
+.menu *{
+ position: relative;
+ padding: 0 20px;
+ font-size: 1.1em;
+ text-decoration: none;
+ color: black;
+}
+
+main{
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  text-align: right;
+}
+
+main section:not(a){
+  text-align: justify;
+}
+
+#About{
+  flex: 2;
+}
+
+section:last-child{
+  flex: 3;
+  margin-left: 20px;
+}
+
+#service img{
+  width: 250px;
+  float: left;
+margin: 0 20px 20px 0;
+  
+}
+
+.box{
+  width: 100%;
+  text-align: right;
+}
+
+.btn{
+  display: inline-block;
+  position: relative;
+  background-color: #b8cb21;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+footer p{
+  text-align: center;
+}
