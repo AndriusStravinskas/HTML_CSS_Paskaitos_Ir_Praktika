@@ -17,31 +17,31 @@
       </p>
         <form action="">
           <div class="input pilkas">
-            <label for="">Your unique ID that you can't change</label><br>
-            <input type="text" class="ID" readonly value="3D524XY">
+            <label for="id">Your unique ID that you can't change</label><br>
+            <input type="text" class="ID" readonly value="3D524XY" name="id">
           </div>
           <div class="input valid">
-            <label for="">Email:</label><br>
-            <input type="email" required>
+            <label for="email">Email:</label><br>
+            <input type="email" required name="email">
           </div>
           <div class="input valid">
-            <label for="">Password:</label><br>
-            <input type="password" required>
+            <label for="password">Password:</label><br>
+            <input type="password" required name="password">
           </div>
           <div class="input">
-            <label for="">Age:</label><br>
-            <input type="number" min="18" max="65" required class="age">
+            <label for="age">Age:</label><br>
+            <input type="number" min="18" max="65" required value="18" class="age" name="age">
           </div>
           <div class="input">
-            <label for="">Tell us a little about yourself (optional):</label><br>
-            <textarea name="" id="" cols="25" rows="2" optional></textarea>
+            <label for="aboutYourself">Tell us a little about yourself (optional):</label><br>
+            <textarea name="" id="" cols="25" rows="2" optional name="aboutYourself"></textarea>
           </div>
           <div class="input">
-          <input type="checkbox" required>
+          <input type="checkbox" required name="agree">
           <label for="agree">I agree with the Terms & Conditions</label>
           </div>
           <div class="input">
-            <input type="submit" name="agree" id="" value="Register">
+            <input type="submit" id="" value="Register">
           </div>
         </form>
       </div>

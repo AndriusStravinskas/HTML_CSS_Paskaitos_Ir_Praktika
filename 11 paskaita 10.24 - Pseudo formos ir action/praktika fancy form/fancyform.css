@@ -49,7 +49,7 @@ input:required{
 }
 
 input:in-range{
-  border: 2px rgb(31, 236, 4) solid;
+  border: 3px rgb(248, 191, 5) solid;
 }
 
 input:out-of-range{
