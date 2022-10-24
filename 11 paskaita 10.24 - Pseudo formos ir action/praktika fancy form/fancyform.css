@@ -1,0 +1,71 @@
+body{
+  background-color: rgb(47,79,79);
+}
+
+main{
+  text-align: center;
+}
+
+section{
+  max-width: 378px;
+  height: 467px;
+  border: black solid 2px;
+  color: #ffffff;
+}
+
+.box{
+  width: 100%;
+  text-align: center;
+}
+
+span{
+  background-color: rgb(231, 111, 181);
+}
+
+.input{
+  display: block;
+  position: relative;
+  padding-top: 10px;
+}
+
+ .pilkas input:read-only {
+  background-color: grey;
+}
+
+input:read-write{
+  background-color: none;
+}
+
+input:required{
+  border: 2px solid red;
+}
+
+.valid input:valid{
+  border: 2px solid rgb(31, 236, 4)
+}
+
+.age{
+  width: 32px;
+}
+
+input:in-range{
+  border: 2px rgb(31, 236, 4) solid;
+}
+
+input:out-of-range{
+  border: 2px red solid;
+}
+
+input[type="checkbox"]:checked + label{
+  color: rgb(55, 175, 255);
+
+}
+
+input[type="submit"]{
+  background-color: rgb(39, 184, 39);
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(5, 82, 5);
+}
+

@@ -1,0 +1,37 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body{
+  height: 500vh;
+}
+
+.ikona{
+  font-size: 30px;
+  color: rgba(51, 34, 12, 0.575);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.flexkonteineris{
+  background-color: beige;
+  margin: 0 50px;
+  height: 500px;
+  display: flex;
+
+}
+
+.flexElementas{
+  width: 150px;
+  height: 150px;
+  border: 5px dashed brown;
+  background-color: rgb(122, 233, 146);
+  font-size: 20px;
+}
+
+
+.centruotiSuFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
