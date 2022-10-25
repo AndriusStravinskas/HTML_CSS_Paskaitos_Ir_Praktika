@@ -1,0 +1,55 @@
+#bigFlexTask{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#bigFlexTask > div{
+  height: 300px;
+  width: 300px;
+  border: 2px black solid;
+}
+
+/* 9 */
+
+.nr9{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.nr9RedTop{
+  background-color: red;
+  flex-grow: 2;
+}
+
+.nr9RedBottom{
+  display: flex;
+  background-color: red;
+  flex-grow: 1;
+  gap: 3px;
+}
+
+.nr9RedBottom > div:nth-child(1),
+.nr9RedBottom > div:nth-child(2){
+  flex-grow: 2;
+  background-color: orange;
+}
+
+.nr9RedBottomOrange3{
+  background-color: orange;
+  flex-grow: 1;
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+
+.nr9RedBottomOrange3 > div{
+  flex-grow: 1;
+  background-color: green;
+}
+
+.fonas{
+  background-image: url(./Ekrano\ nuotrauka\ 2022-10-25\ 112148.jpg);
+  background-size: cover;
+}

@@ -1,0 +1,82 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+:root{
+  --bg-cl: #00253f;
+  --font-cl:#84d5bb;
+}
+
+main{
+  margin: 10px;
+
+}
+
+.container{
+  display: flex;
+  column-gap: 20px;
+  max-width: fit-content;
+  max-height: max-content;
+  background-color: var(--bg-cl);
+}
+
+
+.bigBox{
+  display: flex;
+  color: var(--font-cl);
+  flex: 2;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.bigBoxone{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1{
+  flex-grow: 2;
+  font-size: 9rem;
+  margin: 50px 0px;
+}
+
+.bigBoxone p{
+  flex-grow: 1;
+  font-size: 1.5rem;
+  margin: 10px 20px;
+  height: 100px;
+  width: 25rem;
+}
+
+.container:not(.bigBox){
+  color: white;
+  flex: 1;
+}
+
+.oneBox, .twoBox, .threeBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.boxContent{
+  padding-left: 20px;
+  flex-grow: 1;
+  
+}
+
+.container h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.container p:not(.bigBox p){
+  color: rgba(255, 255, 255, 0.658);
+  padding: 5px 0px 20px 0px;
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  flex-grow: 2;
+}
+
