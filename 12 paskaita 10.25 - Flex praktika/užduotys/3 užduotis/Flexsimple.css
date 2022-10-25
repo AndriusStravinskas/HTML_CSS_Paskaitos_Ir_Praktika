@@ -1,0 +1,35 @@
+
+div{
+  display: flex;
+  color: white;
+}
+/* 1,2,3,4 */
+.black{
+  width: 900px;
+  height: 300px;
+  /* border: 3px black solid; */
+  gap: 10px;
+}
+/* 1,2 */
+.red{
+  gap: 10px;
+  flex-grow: 2;
+  flex-direction: column;
+}
+/* 2-3,4 */
+.blue{
+  gap: 10px;
+  flex-grow: 2;
+  
+}
+/* 3,4 */
+.pink{
+  gap: 10px;
+  flex-grow: 2;
+}
+
+.fonas{
+  background-color: #ff5338;
+  justify-content: center;
+  align-items: center;
+}

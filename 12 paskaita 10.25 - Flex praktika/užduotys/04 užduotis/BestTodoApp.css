@@ -1,0 +1,187 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --purple-clr:#645cff;
+  --black-clr:#10172a;
+  --red-clr:#832029;
+  --green-clr:#0e5232;
+  --white-clr:#ffffff;
+  --input-bg:#f8fafc;
+  --input-border-clr:#e2e8f0;
+  --box-shadow: 1px 1px 8px #8888888e;
+  --Taskbox-shadow: 1px 15px 10px 1px #8888888e;
+  --OtherTaskBox-shadow: 1px 5px 10px 1px #8888888e;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  height: 300vh;
+}
+
+/* HEADER */
+
+#bestTodoApp{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 1050px;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.contact{
+  display: flex;
+  gap: 15px;
+}
+
+span{
+  color: var(--purple-clr);
+}
+
+/* MAIN */
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Add Task Box */
+.addTaskBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+  box-shadow: var(--box-shadow);
+  width: 638px;
+  height: 166px;
+  border-radius: 7px;
+}
+
+/* Box content */
+.inputBox{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  background-color: var(--purple-clr);
+  color: var(--white-clr);
+  padding: 0px 47px;
+  border-radius: 0px 3px 3px 0px;
+  box-shadow: var(--black-clr);
+  display: flex;
+  align-items: center;
+}
+
+.addInput{
+  border: var(--input-border-clr) solid 1px;
+  border-radius: 3px 0px 0px 3px;
+  padding: 6px 0px;
+  width: 400px;
+  background-color: var(--input-bg);
+
+}
+
+/* Task Box */
+
+.TaskBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 170px;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: var(--OtherTaskBox-shadow);
+  width: 638px;
+  height: 76px;
+  border-radius: 7px;
+}
+
+
+.iconButton{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.TaskBoxAfterFirst{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 170px;
+  align-items: center;
+  margin-top: 30px;
+  box-shadow: var(--OtherTaskBox-shadow);
+  width: 638px;
+  height: 76px;
+  border-radius: 7px;
+}
+
+section > div:hover{
+  box-shadow: var(--Taskbox-shadow);
+  transition: 0.6s;
+}
+
+.fa-check-circle-o{
+  color: var(--green-clr);
+}
+
+/* Next page - Task edit */
+
+
+.taskEditBox{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  box-shadow: var(--box-shadow);
+  width: 638px;
+  height: 300px;
+  border-radius: 7px;
+}
+
+.hOnetext{
+  align-self: center;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  
+}
+
+.editInput{
+  margin-left: 100px;
+}
+
+.numberInput{
+  margin-left: 76px;
+  border: none;
+}
+
+.numberInput input:read-only{
+
+}
+
+.completedInput{
+  margin-left: 76px;
+}
+
+.taskSumbit{
+  text-align: center;
+}
+
+.btn{
+  background-color: var(--purple-clr);
+  border: none;
+  padding: 6px 200px;
+  border-radius: 3px;
+}
+

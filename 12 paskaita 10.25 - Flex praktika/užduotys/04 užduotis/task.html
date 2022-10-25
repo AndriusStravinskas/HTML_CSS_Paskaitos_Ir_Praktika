@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task edit</title>
+  <link rel="stylesheet" href="./BestTodoApp.css">
+</head>
+<body>
+  <header id="bestTodoApp">
+    <h1>Best <span>ToDo</span> App</h1>
+    <div class="contact">
+      <a href=""><span class="fa fa-facebook-square" style="font-size:36px"></span></a>
+      <a href=""><span class="fa fa-twitter" style="font-size:36px"></span></a>
+      <a href=""><span class="fa fa-linkedin-square" style="font-size:36px"></span></a>
+    </div>
+  </header>
+  <main>
+    <section id="main">
+      <div class="taskEditBox">
+        <h1 class="hOnetext">Edit Task</h1>
+        <form action="">
+          <div class="">
+            <div class="task ID">
+              <label for="">Task ID</label>
+              <input type="number" class="numberInput" value="12345678" readonly>
+            </div>
+            <div class="task Name">
+              <label for="task Name">Add</label>
+              <input type="text" placeholder="e.g. do push up" name="taskName" class="addInput editInput">
+            </div>
+            <div class="task Completed">
+              <label for="">Completed</label>
+              <input type="checkbox" class="completedInput">
+            </div>
+            <div class="taskSumbit">
+              <input type="submit" value="edit" class="btn">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
