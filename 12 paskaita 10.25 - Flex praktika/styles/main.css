@@ -1,0 +1,73 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+:root{
+  --mėlyna-tamsi: rgb(14, 1, 65);
+  --mėlyna-sviesi: rgb(1, 196, 255);
+  --mėlyna-normali: rgb(47, 0, 255);
+  --menu-aukstis: 80px;
+}
+
+body{
+  color: var(--mėlyna-sviesi);
+}
+
+/* MENU */
+
+header{
+  height: var(--menu-aukstis);
+  position: sticky;
+  background-color: rgb(170, 142, 109);
+  top: 0;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  align-items: center;
+}
+
+/* nav div{
+  background-color: aquamarine;
+} */
+
+.logo{
+  margin-left: 10px;
+  margin-top: 10px;
+  height: calc(var( --menu-aukstis) - 10px);
+
+}
+
+.mainMenu{
+  width: 50%;
+  margin-right: 10px;
+
+}
+
+.mainMenu > ul{
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+}
+
+.link{
+  text-decoration: none;
+}
+
+.link:hover{
+  background-color:  rgb(245, 207, 151);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+
+/* BODY */
+
+/* HERO */
+
+/* ABOUT */
