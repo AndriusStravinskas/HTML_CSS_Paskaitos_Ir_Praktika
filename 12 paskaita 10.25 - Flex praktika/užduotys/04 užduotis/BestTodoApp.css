@@ -166,10 +166,6 @@ section > div:hover{
   border: none;
 }
 
-.numberInput input:read-only{
-
-}
-
 .completedInput{
   margin-left: 76px;
 }
