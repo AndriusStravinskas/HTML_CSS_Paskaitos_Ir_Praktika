@@ -1,0 +1,106 @@
+
+
+:root{
+  --bg-cl: #dda900;
+  --menu-bg-cl:#cccccc;
+  --menu-cl:#dfaa00;
+  --border-color:#808080;
+  --main-clr:white;
+}
+
+#container{
+  max-width: 865px;
+}
+
+/* HEADER */
+
+.containerTop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainName{
+  background-color: var(--bg-cl);
+  color: var(--main-clr);
+  width: 100%;
+  text-align: center;
+}
+
+.mainMenu{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+  background-color: var(--menu-bg-cl);
+  padding: 10px 0;
+
+
+}
+
+.menuBotton{
+  border: 2px black solid;
+  background-color: var(--main-clr);
+  padding: 10px 55px;
+  text-decoration: none;
+  color: var(--menu-cl);
+}
+
+/* MAIN */
+
+.containerMain{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--border-color);
+  
+}
+
+.containerMain > div{
+  width: 270px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--main-clr);
+  display: flex;
+  flex-direction: column;
+
+}
+
+img{
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 15px;
+}
+
+.textBox{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  margin: 0 10px;
+}
+
+.containerMain a {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 7px 30px;
+  border: 2px black solid;
+  background: linear-gradient(90deg, rgba(226,223,221,1) 0%, rgba(241,241,241,1) 100%);
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+
+}
+
+footer{
+  background-color: var(--bg-cl);
+  color: var(--main-clr);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 17px;
+}
