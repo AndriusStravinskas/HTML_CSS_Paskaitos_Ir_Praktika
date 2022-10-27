@@ -1,0 +1,112 @@
+.gridtable{
+  margin-left: 50px;
+  display: grid;
+  grid-template: repeat(9, 100px) / repeat(18, 100px);
+  gap: 20px;
+  /* grid-template: repeat(9, 80px) / repeat(18, 80px);
+  gap: 5px; */
+}
+
+.empty1{
+  grid-column: 2/18;
+}
+
+.empty2{
+  grid-row: 2/4;
+  grid-column: 3/13;
+}
+
+.empty3{
+  grid-row: 8/10;
+  grid-column: 1/1;
+}
+
+.empty4{
+  grid-row: -3/-1;
+  grid-column: -4/-1;
+}
+
+
+
+
+.formule{
+  text-align: center;
+  background-color: aqua;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+
+.formule p:last-of-type{
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.formule:hover{
+  /* width: 200px;
+  height: 200px;
+  font-size: 50px; */
+  z-index: 1;
+  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  transition: 0.3s; */
+  
+  background : rgb(225, 225, 225) none repeat scroll 0% 0% / auto padding-box border-box; 
+  text-decoration : none solid rgb(102, 102, 102); 
+  color : rgb(102, 102, 102); 
+  -webkit-tap-highlight-color : rgba(0, 0, 0, 0); 
+  -webkit-font-smoothing : antialiased; 
+  vertical-align : middle; 
+  transform : matrix(1.1, 0, 0, 1.1, 0, 0); 
+  box-shadow : rgba(0, 0, 0, 0.5) 0px 10px 10px -10px; 
+  transition-duration : 0.3s; 
+  transition-property : box-shadow, transform; 
+
+}
+
+
+
+/* SPALVOS */
+
+
+.Geltona{
+  background-color: yellow;
+}
+
+.melyna{
+  background-color: rgb(33, 208, 214);
+}
+
+.ruda{
+  background-color: #ffcc99;
+}
+
+.tamsiaiRozine{
+  background-color: #f99;
+}
+
+.sviesiaiRozine{
+  background-color: #fcc;
+}
+
+.oranzine{
+  background-color: #ff7f4f;
+}
+
+.violetine{
+  background-color: #ff99ff;
+}
+
+.zalia{
+  background-color: #6f6;
+}
+
+.pilka{
+  background-color: #e9e9ec;
+}
+
+.zydra{
+  background-color: #9fc;
+}
+
+.tamsiaiMelyna{
+  background-color: rgb(46, 136, 136);
+}

@@ -1,0 +1,118 @@
+
+.flex{
+  display: flex;
+ 
+}
+
+.grid{
+  display: grid;
+}
+
+/* body{
+  margin: 0 auto;
+} */
+
+.table{
+  grid-template: repeat(10, 150px)  / 1520px repeat(15, 100px);
+  gap: 10px;
+}
+
+.tableSuTarpu{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableBeTarpo{
+  flex-direction: row;
+
+}
+
+
+.table_1{
+  grid-row: 2/3;
+  gap: 600px;
+}
+
+.table_2{
+  grid-row: 3/4;
+}
+
+.table_3{
+  grid-row: 4/5;
+}
+
+.table_4{
+  grid-row: 5/6;
+}
+
+.table_5{
+  grid-row: 6/7;
+}
+
+.table_6{
+  grid-row: 7/8;
+}
+
+
+
+/* TABLE */
+
+.box{
+  flex-direction: column;
+  align-items: center;
+}
+
+.formule{
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: auto;
+}
+
+.Geltona{
+  background-color: yellow;
+}
+
+.melyna{
+  background-color: rgb(33, 208, 214);
+}
+
+.ruda{
+  background-color: #ffcc99;
+}
+
+.tamsiaiRozine{
+  background-color: #f99;
+}
+
+.sviesiaiRozine{
+  background-color: #fcc;
+}
+
+.oranzine{
+  background-color: #ff7f4f;
+}
+
+.violetine{
+  background-color: #ff99ff;
+}
+
+.zalia{
+  background-color: #6f6;
+}
+
+
+
+.kaire{
+  gap: 10px;
+}
+
+.desne{
+  gap: 10px;
+}
+
+
+
+
+/* GRID PERIODIC TABLE */
