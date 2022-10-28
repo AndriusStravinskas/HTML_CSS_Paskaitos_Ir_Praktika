@@ -1,3 +1,19 @@
 body{
   color: blue;
+  height: 200vh;
+}
+
+#task1{
+  margin: 0 auto;
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px;
+  gap: 10px;
+}
+
+/* .pirmas, .antras, .trecias */
+#task1 div[class]{
+  
+  background-color: grey;
 }

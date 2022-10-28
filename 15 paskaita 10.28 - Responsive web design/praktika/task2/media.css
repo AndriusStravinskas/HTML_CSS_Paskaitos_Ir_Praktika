@@ -1,0 +1,48 @@
+
+
+@media (max-width: 768px){
+  #task2{
+    grid-template: 50% 30% 20% / 1fr 2fr;
+  }
+
+  .header{
+    background-color: rgb(82,167,249);
+    grid-area: 1/1/4/2;
+  }
+  .main{
+    background-color: rgb(111,192,65);
+  
+  }
+  .widget{
+    background-color: rgb(179,106,226);
+    grid-area: 2/2;
+  }
+  .footer{
+    background-color: rgb(3,101,192);
+    grid-area: 3/2;
+  }
+}
+
+
+@media (max-width: 560px){
+  #task2{
+    grid-template: 10% 60% 30% 10% / 1fr;
+  }
+
+  .header{
+    background-color: rgb(82,167,249);
+    grid-area: inherit;
+  }
+  .main{
+    background-color: rgb(111,192,65);
+  
+  }
+  .widget{
+    background-color: rgb(179,106,226);
+    grid-area: inherit;
+  }
+  .footer{
+    background-color: rgb(3,101,192);
+    grid-area: inherit;
+  }
+}
