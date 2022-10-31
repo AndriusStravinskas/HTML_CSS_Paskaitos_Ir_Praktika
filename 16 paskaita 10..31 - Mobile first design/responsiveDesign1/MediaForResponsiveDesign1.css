@@ -28,7 +28,6 @@
     display: flex;
     gap: 5px;
     width: 100%;
-    height: ;
   }
 
   .content{
@@ -89,7 +88,6 @@
     grid-template: 1fr 1fr / 1fr 1fr;
     gap: 5px;
     width: 100%;
-    height: ;
   }
 
   .content{
