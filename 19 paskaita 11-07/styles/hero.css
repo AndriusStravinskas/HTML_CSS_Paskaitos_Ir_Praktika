@@ -1,0 +1,83 @@
+.hero {
+  position: relative;
+  height: 70vh;
+  /* background-image: url(../Images/hero-mobile.jpg); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 100;
+}
+
+.hero__background--sm {
+  display: none;
+}
+
+.hero__background--md {
+  display: none;
+}
+
+.hero__background--lg {
+  display: none;
+}
+
+.hero__background--xl {
+  display: none;
+}
+
+@media screen and (min-width:576px) {
+
+  .hero__background--sm {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  .hero__background--md {
+    display: block;
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .hero__background--lg {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1200px) {
+
+  .hero__background--xl {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+/* @media screen and (min-width:576px) {
+  .hero {
+    background-image: url(../Images/sajad-baharvandi-xtj4Yhvjsvk-unsplash.jpg);
+  }
+} */

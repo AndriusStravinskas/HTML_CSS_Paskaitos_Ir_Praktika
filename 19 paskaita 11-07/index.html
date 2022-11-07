@@ -6,18 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/logo.css">
   <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/hero.css">
 </head>
 
 <body>
   <header class="navbar">
     <i class="navbar__icon bi bi-list"></i>
-    <span class="logo">Under pressure</span>
+    <span class="logo logo--sm">Under pressure</span>
+    <nav class="navbar__navigation">
+      <ul class="navbar__links-list">
+        <li><a href=""> Home</a></li>
+        <li><a href=""> Coffe</a></li>
+        <li><a href=""> Home brew</a></li>
+        <li><a href=""> Bakery</a></li>
+        <li><a href=""> Shop</a></li>
+        <li><a href=""> Login</a></li>
+      </ul>
+    </nav>
     <i class="navbar__icon bi bi-search"></i>
   </header>
 
+  <main class="hero">
+    <img src="./Images/hero-mobile.jpg" alt="" class="hero__background hero__background--xs">
+    <img src="./Images/sajad-baharvandi-xtj4Yhvjsvk-unsplash.jpg" alt="" class="hero__background hero__background--sm">
+    <div class="hero__content">
+      <h1>Čia yra prasmingas tekstas</h1>
+    </div>
+  </main>
 </body>
 
 </html>
