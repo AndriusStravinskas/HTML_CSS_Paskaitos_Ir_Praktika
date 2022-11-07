@@ -1,0 +1,81 @@
+section{
+  height: 100vh;
+  border-bottom: 1px solid black;
+}
+
+.kvadratas{
+  position: relative;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border: 3px orange dashed;
+  transition: all 5s linear 1s,
+              background-color 1s linear 3s;
+}
+
+.kvadratas:hover{
+  background-color: aqua;
+  /* width: 500px; */
+  transform: scalex(2.5)
+            translateX(300px)
+            rotate(45deg);
+  /* transform: skew(30deg, 90deg); */
+  left: 300px;
+}
+
+.anim1{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(57, 136, 110);
+  border: 1px black solid;
+  animation: 10s linear
+   infinite alternate animacija1;
+}
+
+@keyframes animacija1{
+  /* from{
+
+  } to {
+
+  } */
+
+  0% {
+    background-color: brown;
+    border-radius: 0%;
+  } 30% {
+    transform: translateX(100px);
+    border-radius: 0%;
+  } 45% {
+    border-radius: 50%;
+  } 80% {
+    background-color: blueviolet;
+  } 100% {
+    background-color: blueviolet;
+    transform: translate(200px, 200px);
+    border-radius: 50%;
+  }
+}
+
+/* .anim1:hover */
+#aniStopRun:checked + .anim1{
+  animation-play-state: paused;
+}
+
+#aniStopRun{
+  display: none;
+}
+
+#aniStopRun + label{
+  background-color: green;
+}
+
+#aniStopRun:checked + label{
+  background-color: red;
+}
+
+#aniStopRun:checked ~ .anim1{
+  animation-play-state: paused;
+}
+
+

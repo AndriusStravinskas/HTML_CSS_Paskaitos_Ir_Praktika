@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17 Paskaita Animacija ir perėjimas</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <main>
+    <section id="transition">
+      <h1>Transition</h1>
+      <ul>
+        <li>transition-property - Nurodai kurie stiliai suteikiami vykstant tranzicijai.</li>
+        <li>transition-duration - Nurodai per kiek laiko įvyks transicija.</li>
+        <li>transition-timing-function - Nurodai kaip transicija vyksta per pateiktą laiką.</li>
+        <li>transition-delay - Nurodai po kiek laiko pradės vykti tranzicija.</li>
+        <li>transition - transition-property, transition-duration, transition-timing-function, transition-delay
+        </li>
+      </ul>
+    </section>
+    <section id="transisionPvz">
+      <h1 class="HoverMe">Transition Pvz.:</h1>
+      <div class="kvadratas"></div>
+    </section>
+    <section id="timingFunction">
+      <ul>
+        <li>linear</li>
+        <li>ease</li>
+        <li>ease-in</li>
+        <li>ease-out</li>
+        <li>ease-in-out</li>
+        <li>step-start</li>
+        <li>step-end</li>
+        <li>cubic-bezier</li>
+      </ul>
+    </section>
+    <section id="transform">
+      <h1>Transform</h1>
+      <h3>Scale</h3>
+      <p>
+        Scale: scaleX; scaleY; scaleZ; scale; scale3d;
+        <br>
+        Scale nusako kaip keičiasi elemento dydis.
+        Default dydis yra 1.
+      </p>
+      <h3>Translate</h3>
+      <p>
+        Translate: translateX; translateY; translateZ; translate; translate3d; <br>
+        Translate nusako į kurią pusę ir kokiu atstumu elementas pajudės.
+      </p>
+      <h3>Rotate</h3>
+      <p>
+        Rotate: rotateX; rotateY; rotateZ; rotate; rotate3d; <br>
+        Rotate nusako kurioje ašyje ir kiek elementas suksis. 
+      </p>
+      <h3>Skew</h3>
+      <p>
+        Skew: skew; skewY; skew; <br>
+        Skew nusako kaip yra ištempiami elemento kampai.
+      </p>
+    </section>
+    <section id="animation">
+      <h1>Animation</h1>
+      <ul>
+        <li>animation-duration - Animacijos trukmė.</li>
+        <li>animation-timing-function - Nurodo kokia animacijos tėkmė (vykdymas per pateiktą laiką).</li>
+        <li>animation-delay - Animacijos užlaikymas.</li>
+        <li>animation-iteration-count - Animacijos vykdymo kartai.</li>
+        <li>animation-direction - Animacijos vykdymo kryptis (Kuria kryptimi animacija vyksta).</li>
+        <li>animation-fill-mode - Nusako kokia bus elemento būsena prieš ir po animacijos.</li>
+        <li>animation-play-state - Animacijos būsena.</li>
+        <li>animation-name - Animacijos vardas.</li>
+        <li>animation - Apjungia visus animacijos nustatymus.</li>
+      </ul>
+      <h1>KeyFrames</h1>
+      <p>
+        @keyFrames animation-name { ... } <br>
+        Animacijos frame'ai aprašomi nuo (from) - iki (to) arba procentaliai nuo (0%) - iki (100%). <br>
+        Animacijos laikas yra skirstomas frame'ams pagal jų procentalius nurodymus.
+      </p>
+    </section>
+    <section id="animationPvz">
+      <button id="JsAniControl">Stabdyti animaciją</button>
+      <input type="checkbox" id="aniStopRun">
+      <label for="aniStopRun">Stabdyti / Leisti animacija</label>
+      <div class="anim1"></div>
+    </section>
+  </main>
+
+  <script>
+    document
+    .querySelector("#jsAniControl")
+    .addEventListener('click', (event) =>{
+      console.log(event);
+      if(event.target.textcontent === "Stabdyti animaciją"){
+        event.target.textcontent === "Leisti animaciją";
+        document.querySelector('.anim1').style.animationPlayStore = "paused";
+        } else if (event.target.textcontent === "Leisti animaciją"){
+        event.target.textcontent === "Stabdyti animaciją";
+        document.querySelector('.anim1').style.animationPlayStore = "running";
+        } else {
+
+        }
+
+    })
+  </script>
+</body>
+</html>

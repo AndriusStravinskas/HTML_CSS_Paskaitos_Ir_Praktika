@@ -1,0 +1,153 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+}
+
+.anim1{
+  width: 100px;
+  height: 100px;
+  border: 1px black solid;
+  transition: all 1s linear 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  font-size: 3.5vw;
+  opacity: 0;
+}
+
+.anim1:hover{
+  background-color: blueviolet;
+  transform: scale(2, 2)
+            rotate(360deg)
+            translateX(50%)
+            skew(10deg, 15deg);
+}
+
+.anim1:hover > h3{
+  opacity: 1;
+  transition: all 2s ease-in 2s;
+}
+
+.anim2{
+  width: 100px;
+  height: 100px;
+  border: 1px black solid;
+  border-radius: 0%;
+  animation: 5s linear 1s infinite alternate anim2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h2{
+  font-size: 18px;
+}
+
+@keyframes anim2 {
+  0%{
+    border-radius: 0%;
+    transform: translateX(260px);
+    background-color: white;
+    color: black;
+  } 25%{
+    border-radius: 25%;
+    border: 20px purple solid;
+    background-color: white;
+    color: white;
+  } 50%{
+    border-radius: 50%;
+    transform: translateX(-280px);
+    border: 1px black solid;
+    background-color: white;
+    color: white;
+  } 75% {
+    border-radius: 25%;
+    background-color: blueviolet;
+    color: white;
+  } 100% {
+    border-radius: 50%;
+    transform: translateX(260px);
+    border: 0;
+    color: white;
+  }
+} 
+
+img{
+  width: 300px;
+}
+
+.anim3{
+  animation: 2s infinite 250ms alternate anim3;
+}
+
+@keyframes anim3{
+  from{
+    transform: translateY(30px);
+  }
+  to{
+    transform: translateY(-30px);
+  }
+}
+
+.anim4{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: 0.5s infinite 250ms alternate anim4;
+  /* animation: 0.5s ease-out 0s 1 normal none running anim4, 1s ease 0.5s infinite normal none running strobe; */
+  border: 1px black solid;
+  transform-origin: bottom;
+}
+
+@keyframes anim4{
+  /* from{
+    transform: skew(-10deg)
+              scale(0.8, 0.7);
+
+  } to {
+    transform: skew(10deg)
+              scale(0.8, 0.7);
+  } */
+
+  0%{
+    transform: skew(15deg)
+     scale(1.2, 1);
+     
+  } 50% {
+    transform: scale(1, 1);
+  } 100%{
+    transform: skew(-15deg)
+     scale(1.2, 1);
+  }
+}
+
+/* box-sizing : border-box; 
+font-family : "Exo 2", Lato, "Helvetica Neue", sans-serif; 
+transition : transform 0.2s ease-out 0s; 
+background : rgb(228, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box; 
+border-color : rgb(171, 18, 18); 
+box-shadow : rgba(255, 255, 255, 0.4) 0px 0px 0px 6px; 
+display : inline-block; 
+margin : 20px 10px; 
+height : 60px; 
+border-radius : 100px; 
+border-style : solid; 
+border-width : 1.99219px 3.98438px 15px; 
+width : 60px; 
+position : relative; 
+transform-origin : 30px 60px; 
+animation : 0.5s ease-out 0s 1 normal none running strobeStart, 1s ease 0.5s infinite normal none running strobe;  */

@@ -1,0 +1,20 @@
+.logo {
+  display: inline-block;
+  text-transform: uppercase;
+  width: 5.5em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.logo--xl {
+  font-size: 5rem;
+}
+
+.logo--sm {
+  font-size: 1rem;
+}
+
+.logo--xs {
+  font-size: 0.7rem;
+}
+/* Dydžių skirtumai, ir em */

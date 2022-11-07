@@ -24,11 +24,15 @@ body{
 
 /* HEADER */
 
+header{
+  
+}
+
 #bestTodoApp{
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
-  column-gap: 1050px;
+  column-gap: 50%;
   align-items: center;
   box-shadow: var(--box-shadow);
 }
@@ -92,8 +96,8 @@ main{
 .TaskBox{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 170px;
+  justify-content: space-between;
+  gap: 120px;
   align-items: center;
   margin-top: 50px;
   box-shadow: var(--OtherTaskBox-shadow);
@@ -102,17 +106,23 @@ main{
   border-radius: 7px;
 }
 
+.padLeft{
+  padding-left: 50px;
+}
+
 
 .iconButton{
   display: flex;
   gap: 32px;
   align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .TaskBoxAfterFirst{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 170px;
   align-items: center;
   margin-top: 30px;
@@ -180,4 +190,6 @@ section > div:hover{
   padding: 6px 200px;
   border-radius: 3px;
 }
+
+
 
