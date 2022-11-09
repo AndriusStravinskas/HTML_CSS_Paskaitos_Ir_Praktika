@@ -1,0 +1,77 @@
+
+
+html {
+  color: var(--black-clr);
+  font-family: var(--main-font)
+}
+
+.h1big {
+  font-size: 3rem;
+}
+
+.h1{
+  font-size: 2.1rem;
+}
+
+.h2 {
+  font-size: 1.8rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+}
+
+.h4 {
+  font-size: 1.25rem;
+}
+
+.h5 {
+  font-size: 1rem;
+}
+
+.h6 {
+  font-size: 0.8rem;
+}
+
+.text-white {
+  color: var(--white-clr);
+}
+
+.text-grey {
+  color: var(--clr-text-grey)
+}
+
+.text-purple {
+  color: var(--purple-clr);
+}
+
+.span_icon_text--purple {
+  color: var(--purple-clr);
+}
+
+.bg-purple {
+  background-color: var(--purple-clr);
+}
+
+.bg-purple-darken {
+  background-color: var(--purple-darken-clr);
+}
+
+.fw-normal {
+  font-weight: 500;
+}
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}

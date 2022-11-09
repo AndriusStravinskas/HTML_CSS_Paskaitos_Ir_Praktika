@@ -1,0 +1,22 @@
+
+
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__filter {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.portfolio__images {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  gap: 2rem;
+}

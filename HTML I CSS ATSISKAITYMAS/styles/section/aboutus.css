@@ -1,0 +1,41 @@
+
+.container{
+
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-us__content {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  gap: 2rem;
+}
+
+.about-us__card {
+  cursor: pointer;
+}
+
+.about-us__card:hover {
+  background-color: var(--green-clr);
+  color: var(--white-clr);
+}
+
+.about-us__card:hover .about-us__card__title {
+  color: var(--white-clr);
+}
+
+.about-us__card:hover .card__icon--hover {
+  color: var(--white-clr);
+}
+
+
+.about-us__card__title {
+  color: #eeeeee
+}
+

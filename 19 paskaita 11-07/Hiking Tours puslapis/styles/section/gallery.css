@@ -1,0 +1,25 @@
+
+.gallery {
+}
+
+.gallery_box {
+  display: grid;
+}
+
+.gallery__images {
+  position: relative;
+  border-top: 5px solid var(--purple-clr);
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width:768px) {
+
+  .gallery_box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery__images {
+    border: none;
+  }
+}

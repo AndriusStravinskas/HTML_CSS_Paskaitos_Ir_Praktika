@@ -1,0 +1,22 @@
+
+@import './abstracts/variables.css';
+
+
+@import './reset.css';
+
+@import './components/navbar.css';
+@import './section/hero.css';
+@import './section/aboutus.css';
+@import './section/services.css';
+@import './section/tours.css';
+@import './section/gallery.css';
+@import './section/subscribe.css';
+@import './components/footer.css';
+
+
+@import './utilities/typography.css';
+@import './utilities/spacing.css';
+
+@import './';
+
+@import './';

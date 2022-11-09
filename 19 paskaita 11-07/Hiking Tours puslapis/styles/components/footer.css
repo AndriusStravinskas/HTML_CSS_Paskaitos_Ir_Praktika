@@ -1,0 +1,27 @@
+
+
+.footer{
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link-color {
+  color: var(--white-clr);
+}
+
+.footer__navigation_list-link{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footer__social--icon {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}

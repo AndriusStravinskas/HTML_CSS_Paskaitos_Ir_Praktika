@@ -1,0 +1,75 @@
+html {
+  color: var(--clr-text-black);
+  font-family: var(--main-font);
+}
+
+.h1{
+  font-size: 2.1rem;
+}
+
+.h2 {
+  font-size: 1.8rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+}
+
+.h4 {
+  font-size: 1.25rem;
+}
+
+.h5 {
+  font-size: 1rem;
+}
+
+.h6 {
+  font-size: 0.8rem;
+}
+
+.text-grey {
+  color: var(--clr-text-grey)
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+.fw-light {
+  font-weight: 300;
+}
+.fw-bold {
+  font-weight: 600;
+}
+
+
+.subtitle {
+  text-transform: uppercase;
+  color: var(--clr-text-grey);
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  display: inline-flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 2rem;
+  
+}
+
+.title::after {
+  content: " ";
+  display: inline-block;
+  font-weight: 600;
+  height: 2px;
+  width: 200px;
+  background-color: var(--clr-text-grey);
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+
+

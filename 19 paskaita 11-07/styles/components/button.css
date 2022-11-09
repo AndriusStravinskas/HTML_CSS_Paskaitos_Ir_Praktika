@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white-darken);
+  border: none;
+  font-family: var(--main-font);
+  border: 2px solid var(--clr-black);
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: var(--clr-black-lighten);
+  color: var(--clr-white);
+}
+
+.btn.btn--outlined {
+  background-color: initial;
+  color: var(--clr-black-lighten);
+}
+
+.btn.btn--outlined:hover {
+  color: var(--clr-black);
+}
+
+
+@media screen and (min-width: 576px) {
+    .btn.btn-desktop--outlined {
+      background-color: initial;
+      color: var(--clr-black-lighten);
+    }
+    
+    .btn.btn-desktop--outlined:hover {
+      color: var(--clr-black);
+      background-color: var(--clr-white-darken);
+    }
+    
+}

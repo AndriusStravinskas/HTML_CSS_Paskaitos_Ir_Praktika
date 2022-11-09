@@ -1,0 +1,34 @@
+:root{
+
+  --main-font: 'Open Sans', sans-serif;
+  --green-clr: #a2cf8d;
+  --purple-clr:#645cff;
+  --purple-darken-clr: #645cff;
+  --black-clr:#151515;
+  --red-clr:#832029;
+  --white-clr:#ffffff;
+  --clr-white-darken: #eee;
+  --clr-black-lighten: #353535;
+  --clr-grey: #888;
+
+  --bcg-clr-black: var(--black-clr);
+  --background-clr:#f4f4f4;
+  --bcg-clr-grey: #fafafa;
+  --button-hover-background-green-darken: #5db68d;
+
+  --clr-text-black: var(--clr-black);
+  --clr-text-grey: var(--clr-grey);
+  --input-bg:#f8fafc;
+  --input-border-clr:#e2e8f0;
+  --box-shadow: 0px 0px 15px #cdcdcd;;
+  --Taskbox-shadow: 1px 15px 10px 1px #8888888e;
+  --OtherTaskBox-shadow: 1px 5px 10px 1px #8888888e;
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 3rem;
+  --spacing-auto: auto;
+  
+}

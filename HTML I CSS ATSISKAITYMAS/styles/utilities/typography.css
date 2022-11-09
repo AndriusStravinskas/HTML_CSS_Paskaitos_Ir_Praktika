@@ -1,0 +1,114 @@
+
+body {
+  height: 150vh;
+  background-color: var(--background-clr);
+}
+
+html {
+  color: var(--black-clr);
+  font-family: var(--main-font)
+}
+
+.h1big {
+  font-size: 3rem;
+}
+
+.h1{
+  font-size: 2.1rem;
+}
+
+.h2 {
+  font-size: 1.8rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+}
+
+.h4 {
+  font-size: 1.25rem;
+}
+
+.h5 {
+  font-size: 1rem;
+}
+
+.h6 {
+  font-size: 0.8rem;
+}
+
+.text-white {
+  color: var(--white-clr);
+}
+
+.text-green {
+  color: var(--green-clr);
+}
+
+.text-grey {
+  color: var(--clr-text-grey)
+}
+
+.text-purple {
+  color: var(--purple-clr);
+}
+
+.span_icon_text--purple {
+  color: var(--purple-clr);
+}
+
+.bg-white {
+  background-color: var(--white-clr);
+}
+
+.bg-green {
+  background-color: var(--green-clr);
+}
+
+.bg-purple {
+  background-color: var(--purple-clr);
+}
+
+.bg-purple-darken {
+  background-color: var(--purple-darken-clr);
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semi-bold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-extra-bold {
+  font-weight: 800;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.btn--radius{
+  border-radius: 2.5rem;
+}

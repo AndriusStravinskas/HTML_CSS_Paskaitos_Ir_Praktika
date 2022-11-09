@@ -1,0 +1,66 @@
+
+
+.subscribe{
+
+}
+
+.subscribe__box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.subscribe__title {
+
+}
+
+.subscribe__title-text {
+  font-size: 6rem;
+  display: flex;
+  flex-basis: 50%;
+}
+
+.subscribe__input {
+  width: 100%;
+  display: flex;
+}
+
+.input__email {
+  flex: 2;
+  display: inline-block;
+  border: none;
+}
+
+.input__submit {
+  position: relative;
+  right: 1px;
+  flex: 1;
+  border: none;
+
+}
+
+.subscribe-small-text {
+  width: 16rem;
+}
+
+@media screen and (max-width:655px) {
+  .subscribe__title-text {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width:595px) {
+  .subscribe__title-text {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (min-width:756px) {
+  
+  .subscribe-small-text {
+    width: 25rem;
+  }
+}
