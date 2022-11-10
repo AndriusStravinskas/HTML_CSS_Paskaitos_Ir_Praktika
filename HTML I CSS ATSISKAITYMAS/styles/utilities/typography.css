@@ -112,3 +112,10 @@ html {
 .btn--radius{
   border-radius: 2.5rem;
 }
+
+.line-dec {
+  background-color: var(--background-clr);
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+}
