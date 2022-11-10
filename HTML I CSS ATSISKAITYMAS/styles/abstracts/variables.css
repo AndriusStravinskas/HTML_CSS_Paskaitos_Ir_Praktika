@@ -18,7 +18,7 @@
 
   --clr-text-black: var(--clr-black);
   --clr-text-grey: var(--clr-grey);
-  --input-bg:#f8fafc;
+  --input-bg-clr:#fafafa1a;
   --input-border-clr:#e2e8f0;
   --box-shadow: 0px 0px 15px #cdcdcd;;
   --Taskbox-shadow: 1px 15px 10px 1px #8888888e;

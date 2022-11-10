@@ -1,4 +1,5 @@
 
+
 @import './abstracts/variables.css';
 
 
@@ -6,6 +7,7 @@
 
 
 @import './components/navbar.css';
+@import './components/footer.css';
 
 
 @import './section/hero.css';
@@ -13,13 +15,7 @@
 @import './section/offers.css';
 @import './section/portfolio.css';
 @import './section/blog.css';
-@import './';
-@import '';
 
 
 @import './utilities/typography.css';
 @import './utilities/spacing.css';
-
-@import './';
-
-@import './';

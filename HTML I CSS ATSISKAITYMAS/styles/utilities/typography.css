@@ -109,7 +109,7 @@ html {
   box-shadow: var(--box-shadow);
 }
 
-.btn--radius{
+.btn-radius{
   border-radius: 2.5rem;
 }
 
@@ -118,4 +118,18 @@ html {
   width: 60px;
   height: 3px;
   margin: 0 auto;
+}
+
+.border-none {
+  outline: none;
+  border: none;
+}
+
+.border-none:focus {
+  outline: none;
+  border: none;
+}
+
+.input-bg-clr {
+  background-color: var(--input-bg-clr);
 }

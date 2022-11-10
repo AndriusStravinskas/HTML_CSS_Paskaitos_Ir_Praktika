@@ -1,17 +1,16 @@
 
 .hero {
   display: flex;
-  height: 500px;
+  height: 700px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .hero--img {
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 700px;
   aspect-ratio: 1;
   z-index: -1;
 }
@@ -22,5 +21,39 @@
   background-color: var(--button-hover-background-green-darken);
 }
 
+.img--2 {
+  display: none;
+}
+
+.img--3 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .img--1 {
+    display: none;
+  }
+  
+  
+  .img--2 {
+    display: block;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .img--1 {
+    display: none;
+  }
+  
+  
+  .img--2 {
+    display: none;
+  }
+  
+  .img--3 {
+    display: block;
+  }
+}
 
 

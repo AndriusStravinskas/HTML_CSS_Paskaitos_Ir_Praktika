@@ -4,12 +4,29 @@ $lighten-percentage: 9%;
 $opacity-percentage: 17%;
 
 // colors
-$primary: #2568ff;
+$primary: cyan;
 $secondary: #059105;
-$danger: #b92121;
+// 1. užduotis
+$danger: #fa0000;
 $warning: #c9c945;
+$info: magenta;
+// 1. užduotis
+$dark: #555555;
 
-// rakto-reikšės rinkinys MAP
+// Border radius: 
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$border-radius-xl: 0;
+$border-radius-2xl: 0;
+$border-radius-pill: 0;
+
+// 2. užduotis
+// Spinners:
+$spinner-width: 5rem;
+$spinner-height: 5rem;
+
+// rako-reikšės rinkinys MAP
 $colors: (
   primary: $primary,
   secondary: $secondary,
