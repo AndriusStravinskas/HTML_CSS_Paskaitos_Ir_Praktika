@@ -8,26 +8,34 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center;
 }
 
 .content--images {
-  width: 100%;
-  aspect-ratio: 2;
+  
+  
 }
 
 .content__form {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.form--input-text-email {
+.form__input--box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input--box-text-email {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .form--submit {
-  width: 8rem;
+  width: 9rem;
   cursor: pointer;
 }
 
@@ -35,4 +43,18 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-us__content {
+    flex-direction: row;
+
+  }
+  .input--box-text-email{
+    flex-direction: row;
+  }
+
+  .content__form {
+    
+  }
 }

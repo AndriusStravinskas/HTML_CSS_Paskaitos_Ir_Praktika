@@ -34,7 +34,7 @@
     </div>
 
     <main class="container">
-      <section class="mx-4 my-5 about-us">
+      <section class="mx-5 my-5 about-us">
         <h2>What we do</h2>
         <div class="about-us__content">
           <div class="pt-4 text-center about-us__card box-shadow">
@@ -62,13 +62,13 @@
 
       <section class="offers">
         <div class="offers__box">
-          <div class="box--1">
+          
             <div class="offers__text py-5 px-4">
               <h2 class="text-white py-4">New offers just arrived, <br> get it now and take profit.</h2>
               <p class="text-white h6 pb-4">Gochujang pitchfork post-ironic hammock kombucha fanny pack cronut. Raw denim chicharrones semiotics af truffaut pinterest. Distillery letterpress authentic adaptogen. Meditation schlitz humblebrag photo booth celiac cliche chartreuse.</p>
               <p class="text-white h6">Pinterest 90's wolf celiac dreamcatcher listicle deep v semiotics. Intelligentsia literally meggings trust fund put a bird on it. Shoreditch crucifix artisan pug shaman twee. Health goth bicycle rights retro iPhone.
               </p>
-            </div>
+            
           </div>
         
           <div class="offers__btn px-4">
@@ -76,11 +76,17 @@
             <a href="" class="bg-green px-3 py-2 btn-radius btn__hover--white text-white upcase h6">Purschase Now</a>
           </div>
         </div>
-          <div class="box--2">
-            <div class="offers__images my-5">
-              <img src="./img/desertas1.jpg" alt="" class="offers__images--img first-images">
-              <img src="./img/desertas2.jpg" alt="" class="offers__images--img second-images">
-              <img src="./img/desertas3.jpg" alt="" class="offers__images--img third-images">
+          <div class="offers__box--box-2">
+            <div class="offers__images m-4 ">
+              <div class="offers__images--first-images">
+                <img src="./img/desertas1.jpg" alt="" class="offers__images--img first-images">
+              </div>
+              <div class="offers__images--second-images">
+                <img src="./img/desertas2.jpg" alt="" class="offers__images--img second-images">
+              </div>
+              <div class="offers__images--third-images">
+                <img src="./img/desertas3.jpg" alt="" class="offers__images--img third-images">
+              </div>
             </div>
           </div>
         
@@ -117,8 +123,8 @@
               <h3 class="pb-3">Delicioius Food Served</h3>
               
               <p>Posted: George / Date: 11 Aug 2022 / Category: Design</p> <br>
-              <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea enim maiores, distinctio velit id provident in. Est mollitia quam eligendi expedita ut modi, omnis corrupti animi impedit labore ea itaque!</p> <br>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro pariatur ducimus facere suscipit, libero dignissimos, perspiciatis asperiores esse voluptas voluptatum, sint eius! Corporis beatae nesciunt voluptate culpa. Quam, animi in?</p>
+              <p class="h6 pr-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea enim maiores, distinctio velit id provident in. Est mollitia quam eligendi expedita ut modi, omnis corrupti animi impedit labore ea itaque!</p> <br>
+              <p class="h6 pr-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro pariatur ducimus facere suscipit, libero dignissimos, perspiciatis asperiores esse voluptas voluptatum, sint eius! Corporis beatae nesciunt voluptate culpa. Quam, animi in?</p>
             </div>
           </div>
           <div class="blog__content__box-2">
@@ -127,7 +133,7 @@
               <div class="blog__content__box-sm__text text-white pl-3 pt-3">
                 <h3 class="pb-3">Delicioius Food Served</h3>
                 <p>Posted: George / Date: 11 Aug 2022 / Category: Design</p> <br>
-                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea enim maiores, distinctio velit id provident in. Est mollitia quam eligendi expedita ut modi, omnis corrupti animi impedit labore ea itaque!</p> <br>
+                <p class="h6 pr-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea enim maiores, distinctio velit id provident in. Est mollitia quam eligendi expedita ut modi, omnis corrupti animi impedit labore ea itaque!</p> <br>
               </div>
             </div>
 
@@ -136,7 +142,7 @@
             <div class="blog__content__box-sm__text text-white pl-3 pt-3">
                 <h3 class="pb-3">Delicioius Food Served</h3>
                 <p>Posted: George / Date: 11 Aug 2022 / Category: Design</p> <br>
-                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea enim maiores, distinctio velit id provident in. Est mollitia quam eligendi expedita ut modi, omnis corrupti animi impedit labore ea itaque!</p> <br>
+                <p class="h6 pr-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea enim maiores, distinctio velit id provident in. Est mollitia quam eligendi expedita ut modi, omnis corrupti animi impedit labore ea itaque!</p> <br>
               
               </div>
             </div>
@@ -152,11 +158,13 @@
         <img src="./img/map.jpg" alt="" class="content--images">
         <div class="content__form">
           <form action="">
-            <fieldset class="border-none form--input-text-email">
-              <input type="text" name="" id="" class="form--name p-3 input-bg-clr border-none" placeholder="Your name..." required> 
-              <input type="email" name="" id="" class="form--email p-3 input-bg-clr border-none" placeholder="Your email..." required>
+            <fieldset class="border-none form__input--box">
+              <div class="input--box-text-email">
+                <input type="text" name="" id="" class="form--name p-3 input-bg-clr border-none" placeholder="Your name..." required> 
+                <input type="email" name="" id="" class="form--email p-3 input-bg-clr border-none" placeholder="Your email..." required>
+              </div>
               <textarea name="" id="" cols="30" rows="10" class="form--textarea input-bg-clr border-none pl-3 pt-2" placeholder="Your message..."></textarea>
-              <input type="submit" name="" value="SEND MESSAGE" id="" class="form--submit bg-green text-center p-2 btn-radius">
+              <input type="submit" name="" value="SEND MESSAGE" id="" class="form--submit bg-green text-center p-3 btn-radius text-white border-none">
             </fieldset>
           </form>
         </div>
