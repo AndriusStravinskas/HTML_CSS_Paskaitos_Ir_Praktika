@@ -13,27 +13,28 @@
     <nav class="navbar__navigation py-4 box-shadow">
       <img src="./img/black_logo.png" class=" ml-3 navbar__logo"></img>
         <ul class="mr-4 navbar__navigation--list fw-normal">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Featured</a></li>
-          <li><a href="">Gallery</a></li>
+          <li><a href="#" class="list--link">Home</a></li>
+          <li><a href="#about-us" class="list--link">About</a></li>
+          <li><a href="#offers" class="list--link">Offers</a></li>
+          <li><a href="#portfolio" class="list--link">Portfolio</a></li>
+          <li><a href="#blog" class="list--link">Blog</a></li>
+          <li><a href="#contact-us" class="list--link">Contact us</a></li>
         </ul>
-      </nav>
+    </nav>
   </header>
 
     <div class="hero text-white">
       <img src="./img/slide_01.jpg" class="hero--img img--1" alt="">
       <img src="./img/slide_02.jpg" class="hero--img img--3" alt="">
       <img src="./img/slide_03.jpg" class="hero--img img--2" alt="">
-      <p class="h6 upcase hero__top-text">We are perfect staf</p>
+      <p class="h6 upcase hero__top-text">We are perfect staff</p>
       <h1 class="fw-extra-bold upcase hero__main-text">Our team members</h1>
       <p class="fw-semi-bold h6 pt-3 text-center hero__bottom-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tempore consectetur fugit </p>
-      <a href="#" class="h6 fw-semi-bold mt-5 py-2 px-3 bg-green text-white btn-radius">Read more</a>
+      <a href="#" class="h6 fw-semi-bold mt-5 py-2 px-3 bg-green text-white btn-radius btn__hover--white">Read more</a>
     </div>
 
     <main class="container">
-      <section class="mx-5 my-5 about-us">
+      <section class="mx-5 my-5 about-us" id="about-us">
         <h2>What we do</h2>
         <div class="about-us__content">
           <div class="pt-4 text-center about-us__card box-shadow">
@@ -59,7 +60,7 @@
       </div>
       </section>
 
-      <section class="offers">
+      <section class="offers" id="offers">
         <div class="offers__box">
           
             <div class="offers__text py-5 px-4">
@@ -91,7 +92,7 @@
         
       </section>
 
-      <section class="mx-4 my-5 portfolio">
+      <section class="mx-4 my-5 portfolio" id="portfolio">
         <h1 class="upcase">Our portfolio</h1>
         <ul class="my-5 portfolio__filter">
           <li><a href="" class="">All</a></li>
@@ -112,7 +113,7 @@
         </div>
       </section>
 
-      <section class="blog px-4 py-5">
+      <section class="blog px-4 py-5" id="blog">
         <h2 class="upcase text-center pt-5 pb-1 h4 text-white">Our blog post</h2>
         <div class="line-dec"></div>
         <div class="blog_content my-5">
@@ -150,7 +151,7 @@
       </section>
     </main>
 
-    <footer class="contact-us px-4 py-5">
+    <footer class="contact-us px-4 py-5" id="contact-us">
       <h2 class="text-white text-center pt-5 pb-1">Contact us</h2>
       <div class="line-dec mb-5"></div>
       <div class="contact-us__content">
@@ -163,7 +164,7 @@
                 <input type="email" name="" id="" class="form--email p-3 input-bg-clr border-none" placeholder="Your email..." required>
               </div>
               <textarea name="" id="" cols="30" rows="10" class="form--textarea input-bg-clr border-none pl-3 pt-2" placeholder="Your message..."></textarea>
-              <input type="submit" name="" value="SEND MESSAGE" id="" class="form--submit bg-green text-center p-3 btn-radius text-white border-none">
+              <input type="submit" name="" value="SEND MESSAGE" id="" class="form--submit bg-green text-center p-3 btn-radius text-white border-none btn__hover--white fw-semi-bold">
             </fieldset>
           </form>
         </div>

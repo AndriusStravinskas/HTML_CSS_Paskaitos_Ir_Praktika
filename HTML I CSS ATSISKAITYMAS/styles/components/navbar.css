@@ -25,13 +25,17 @@
 
 .navbar__navigation--list {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 600px) {
   .navbar__navigation--list {
     display: flex;
+    background-color: var(--background-clr);
+    flex-wrap: wrap;
     gap: 0.5rem;
+    font-size: 14px;
+    justify-content: flex-end;
   }
   
 }
